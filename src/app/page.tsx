@@ -10,6 +10,8 @@ import {
 } from "../component/aceternity/resizable-navbar";
 import { ShimmerButton } from "../component/magicui/shimmer-button";
 import GridDotBackground from "../component/aceternity/grid-dot-background";
+import { motion } from "framer-motion";
+import { GoCopilot } from "react-icons/go";
 
 export default function Home() {
   return (
@@ -29,14 +31,19 @@ export default function Home() {
                 // { name: "For Brands", link: "#for-brands" },
               ]}
             />
-            <NavbarButton href="#" variant="primary">Sign Up</NavbarButton>
+            {/* <NavbarButton href="#" variant="primary">Sign Up</NavbarButton> */}
+            <ShimmerButton>Sign Up</ShimmerButton>
           </NavBody>
         </Navbar>
 
         {/* Shimmer Button */}
-        <div className="flex justify-center items-center w-full">
+        {/* <div className="flex justify-center items-center w-full">
           <ShimmerButton>Early Access</ShimmerButton>
-        </div>
+        </div> */}
+        {/* Card Demo */}
+        {/* <div className="flex justify-center items-center w-full">
+          <CardDemo />
+        </div> */}
         {/* Sample Evervault Card */}
         {/* <div className="flex justify-center items-center w-full">
           <div className="w-72 h-72">
@@ -50,6 +57,7 @@ export default function Home() {
             <EvervaultCard1 text="Card 1 Demo" title="Card 1" description="This card tells about the evervault card that are from the....................................................................................................... PArth chauhan and this becomes the issue" />
           </div>
         </div> */}
+
       </div>
     </GridDotBackground>
   );
