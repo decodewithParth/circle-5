@@ -8,6 +8,7 @@ import {
   NavbarLogo,
   NavbarButton
 } from "../component/aceternity/resizable-navbar";
+import { ShimmerButton } from "../component/magicui/shimmer-button";
 
 export default function Home() {
   return (
@@ -20,25 +21,33 @@ export default function Home() {
               { name: "Home", link: "#" },
               { name: "About", link: "#about" },
               { name: "Contact", link: "#contact" },
+              { name: "features", link: "#features" },
+              // { name: "supporters", link: "#supporters" },
+              // { name: "For Creators", link: "#for-creators" },
+              // { name: "For Brands", link: "#for-brands" },
             ]}
           />
           <NavbarButton href="#" variant="primary">Sign Up</NavbarButton>
         </NavBody>
       </Navbar>
 
-      {/* Sample Evervault Card */}
+      {/* Shimmer Button */}
       <div className="flex justify-center items-center w-full">
+        <ShimmerButton>Shimmer Button</ShimmerButton>
+      </div>
+      {/* Sample Evervault Card */}
+      {/* <div className="flex justify-center items-center w-full">
         <div className="w-72 h-72">
           <EvervaultCard text="Watch me hover" />
         </div>
-      </div>
+      </div> */}
 
       {/* Sample Evervault Card 1 (updated) */}
-      <div className="flex justify-center items-center w-full mt-8">
+      {/* <div className="flex justify-center items-center w-full mt-8">
         <div className="w-72 h-72">
           <EvervaultCard1 text="Card 1 Demo" title="Card 1" description="This card tells about the evervault card that are from the....................................................................................................... PArth chauhan and this becomes the issue" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
