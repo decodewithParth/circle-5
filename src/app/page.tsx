@@ -12,6 +12,7 @@ import { ShimmerButton } from "../component/magicui/shimmer-button";
 import GridDotBackground from "../component/aceternity/grid-dot-background";
 import { motion } from "framer-motion";
 import { GoCopilot } from "react-icons/go";
+import { HeroSection } from "../component/hero-section";
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
             <ShimmerButton>Sign Up</ShimmerButton>
           </NavBody>
         </Navbar>
-
+        <HeroSection />
         {/* Shimmer Button */}
         {/* <div className="flex justify-center items-center w-full">
           <ShimmerButton>Early Access</ShimmerButton>
