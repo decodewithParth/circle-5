@@ -129,7 +129,7 @@ const ReviewCard = ({
   return (
     <div
       className={cn(
-        "relative h-48 w-36 cursor-pointer overflow-hidden rounded-xl border border-gray-200/20 bg-gray-900/20 backdrop-blur-sm hover:bg-gray-900/30 transition-all duration-300 mx-2"
+        "relative h-48 w-36 cursor-pointer overflow-hidden rounded-xl border border-gray-200/20 transition-all duration-300 mx-2"
       )}
     >
       {/* Background Image or Placeholder */}
@@ -162,9 +162,9 @@ function splitIntoGroups(arr: Review[], groupSize: number): Review[][] {
 export function Marquee3D() {
   const groups = splitIntoGroups(reviews, 4); // 3 groups of 4
   return (
-    <div className="relative flex h-96 w-full flex-row items-center justify-center gap-4 overflow-hidden [perspective:300px]">
+    <div className="relative flex h-96 w-full flex-row items-center justify-center gap-4 overflow-hidden [perspective:300px] bg-transparent">
       <div
-        className="flex flex-row items-center gap-4"
+        className="flex flex-row items-center gap-4 bg-transparent"
         style={{
           transform:
             "translateX(-100px) translateY(0px) translateZ(-100px) rotateX(20deg) rotateY(-10deg) rotateZ(20deg)",
@@ -175,10 +175,10 @@ export function Marquee3D() {
             key={idx}
             pauseOnHover
             vertical
-            className="[--duration:40s]"
+            className="[--duration:40s] bg-transparent"
             reverse={idx === 1} // alternate direction for middle column
           >
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 bg-transparent">
               {Array.from({ length: 20 }).map((_, repeatIdx) =>
                 group.map((review, i) => (
                   <ReviewCard key={review.username + i + '-' + repeatIdx} {...review} />
