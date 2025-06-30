@@ -59,8 +59,8 @@ export function FeaturesSection() {
               <TextAnimate
                 variants={{
                   hidden: { opacity: 0, y: 30, scale: 0.5 },
-                  show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.4 } },
-                  exit: { opacity: 0, y: 30, scale: 0.5, transition: { duration: 0.4 } },
+                  show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.8 } },
+                  exit: { opacity: 0, y: 30, scale: 0.5, transition: { duration: 0.8 } },
                 }}
                 by="character"
               >
