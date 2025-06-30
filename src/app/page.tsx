@@ -15,6 +15,7 @@ import { GoCopilot } from "react-icons/go";
 import { HeroSection } from "../component/hero-section";
 import { FeaturesSection } from "../component/features-section";
 import { ForCreatorsSection } from "../component/for-creators-section";
+import { ForBrandsSection } from "../component/for-brands-section";
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
           <HeroSection />
           <FeaturesSection />
           <ForCreatorsSection />
+          <ForBrandsSection />
         </div>
       </div>
     </GridDotBackground>
