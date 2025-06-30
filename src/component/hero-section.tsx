@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import { AuroraText } from "@/component/magicui/aurora-text";
-import { Marquee3D } from "@/component/magicui/marquee";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const PLACE1_WORDS = ["Brand", "Business", "Startup", "MSME", "SME"];
 const PLACE2_WORDS = ["Creator", "Influencer"];
@@ -18,7 +18,7 @@ function WordRotator({ words, interval = 1500, className }: { words: string[]; i
 
 export function HeroSection() {
   return (
-    <section className="w-full flex flex-col md:flex-row items-center justify-between min-h-[70vh] py-12 md:py-24 px-4 md:px-16 gap-8 bg-transparent">
+    <section className="w-full flex flex-col md:flex-row items-center justify-between min-h-[70vh] py-12 md:py-24 px-4 md:px-16 gap-8 bg-transparent !bg-transparent">
       {/* Left: Text */}
       <div className="flex-1 flex flex-col items-start justify-center max-w-xl gap-6">
         <h1 className="text-3xl md:text-5xl font-bold leading-tight">
@@ -31,10 +31,60 @@ export function HeroSection() {
           <AuroraText className="inline-block font-extrabold text-2xl md:text-3xl transition-colors duration-700 ease-in-out">Circle</AuroraText> in seconds
         </h2>
       </div>
-      {/* Right: Marquee3D */}
-      {/* <div className="flex-1 flex items-center justify-center w-full max-w-2xl bg-transparent">
-        <Marquee3D />
-      </div> */}
     </section>
   );
 }
+
+// export default function InfluencerHero() {
+//   return (
+//     <div className="relative flex items-center justify-center min-h-[70vh]">
+//       {/* Female Character Image */}
+//       <Image
+//         src="/public/images/influencers/abhisaaschanna.jpeg" // Replace with your female image path
+//         alt="Priya S."
+//         width={500}
+//         height={600}
+//         className="rounded-3xl object-cover"
+//         priority
+//       />
+
+//       {/* Top Right Profile Box */}
+//       <div className="absolute top-10 right-10 bg-white/90 rounded-xl shadow-lg flex items-center gap-3 px-5 py-3">
+//         <Image
+//           src="/public/images/ai_image.png" // Small profile image
+//           alt="Priya S."
+//           width={48}
+//           height={48}
+//           className="rounded-full object-cover"
+//         />
+//         <div>
+//           <div className="font-semibold">Priya S.</div>
+//           <div className="text-xs text-pink-500">Fashion</div>
+//           <div className="text-xs text-gray-500">Mumbai</div>
+//         </div>
+//         <div className="ml-4 text-right">
+//           <div className="text-pink-600 font-bold text-lg">95K+</div>
+//           <div className="text-xs text-gray-500">Followers</div>
+//         </div>
+//       </div>
+
+//       {/* Bottom Left Stats Box */}
+//       <div className="absolute bottom-10 left-10 bg-white/90 rounded-xl shadow-lg px-6 py-4">
+//         <div className="flex flex-col gap-1">
+//           <div className="flex justify-between">
+//             <span className="text-gray-700 font-medium">Views</span>
+//             <span className="text-pink-600 font-bold">34,000</span>
+//           </div>
+//           <div className="flex justify-between">
+//             <span className="text-gray-700 font-medium">Likes</span>
+//             <span className="text-pink-600 font-bold">8,500</span>
+//           </div>
+//           <div className="flex justify-between">
+//             <span className="text-gray-700 font-medium">Engagement</span>
+//             <span className="text-green-600 font-bold">4.12%</span>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
