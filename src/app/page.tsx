@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import { GoCopilot } from "react-icons/go";
 import { HeroSection } from "../component/hero-section";
 import { FeaturesSection } from "../component/features-section";
+import { ForCreatorsSection } from "../component/for-creators-section";
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
         <div className="container mx-auto">
           <HeroSection />
           <FeaturesSection />
+          <ForCreatorsSection />
         </div>
       </div>
     </GridDotBackground>
