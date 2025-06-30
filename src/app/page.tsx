@@ -13,6 +13,7 @@ import GridDotBackground from "../component/aceternity/grid-dot-background";
 import { motion } from "framer-motion";
 import { GoCopilot } from "react-icons/go";
 import { HeroSection } from "../component/hero-section";
+import { FeaturesSection } from "../component/features-section";
 
 export default function Home() {
   return (
@@ -36,29 +37,10 @@ export default function Home() {
             <ShimmerButton>Sign Up</ShimmerButton>
           </NavBody>
         </Navbar>
-        <HeroSection />
-        {/* Shimmer Button */}
-        {/* <div className="flex justify-center items-center w-full">
-          <ShimmerButton>Early Access</ShimmerButton>
-        </div> */}
-        {/* Card Demo */}
-        {/* <div className="flex justify-center items-center w-full">
-          <CardDemo />
-        </div> */}
-        {/* Sample Evervault Card */}
-        {/* <div className="flex justify-center items-center w-full">
-          <div className="w-72 h-72">
-            <EvervaultCard text="Watch me hover" />
-          </div>
-        </div> */}
-
-        {/* Sample Evervault Card 1 (updated) */}
-        {/* <div className="flex justify-center items-center w-full mt-8">
-          <div className="w-72 h-72">
-            <EvervaultCard1 text="Card 1 Demo" title="Card 1" description="This card tells about the evervault card that are from the....................................................................................................... PArth chauhan and this becomes the issue" />
-          </div>
-        </div> */}
-
+        <div className="container mx-auto">
+          <HeroSection />
+          <FeaturesSection />
+        </div>
       </div>
     </GridDotBackground>
   );
