@@ -6,6 +6,8 @@ import { NumberTicker } from "@/component/magicui/number-ticker";
 // import { ShineBorder } from "@/component/magicui/shine-border"; // If you have a shine-border component
 import { cn } from "@/lib/utils";
 import { Confetti } from "./magicui/confetti";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const USER_TYPES = ["Brand/Business/Startup/MSME/SME", "Creator/Influencer"];
 
@@ -52,6 +54,7 @@ export default function WaitlistFormSection() {
       setEmail("");
       setWhatsapp(false);
       setShowConfetti(true);
+      toast.success("Registration successful! Welcome to the waitlist.");
       // Update live count
       const snap = await getCountFromServer(collection(db, "waitlist"));
       setJoinedCount(snap.data().count || 0);
@@ -72,6 +75,7 @@ export default function WaitlistFormSection() {
 
   return (
     <section className="w-full max-w-xl mx-auto py-16 flex flex-col items-center gap-8">
+      <ToastContainer position="top-center" autoClose={3000} />
       <div className="text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-2">
           This Is Your Invite to the Inner Circle
