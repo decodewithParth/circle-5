@@ -15,6 +15,7 @@ import { HeroSection } from "../component/hero-section";
 import { FeaturesSection } from "../component/features-section";
 import { ForCreatorsSection } from "../component/for-creators-section";
 import { ForBrandsSection } from "../component/for-brands-section";
+import WaitlistFormSection from "../component/waitlist-form-section";
 
 export default function Home() {
   return (
@@ -24,17 +25,13 @@ export default function Home() {
             <NavbarLogo />
             <NavItems
               items={[
-                { name: "Home", link: "#" },
-                { name: "About", link: "#about" },
-                { name: "Contact", link: "#contact" },
-                { name: "features", link: "#features" },
-                // { name: "supporters", link: "#supporters" },
-                // { name: "For Creators", link: "#for-creators" },
-                // { name: "For Brands", link: "#for-brands" },
+                { name: "Features", link: "#features" },
+                { name: "For Creators", link: "#for-creators" },
+                { name: "For Brands", link: "#for-brands" },
+                { name: "About Us", link: "#about-us" },
               ]}
             />
-            {/* <NavbarButton href="#" variant="primary">Sign Up</NavbarButton> */}
-            <ShimmerButton>Sign Up</ShimmerButton>
+            <ShimmerButton>Early Access</ShimmerButton>
           </NavBody>
         </Navbar>
         <div className="container mx-auto">
@@ -42,6 +39,7 @@ export default function Home() {
           <FeaturesSection />
           <ForCreatorsSection />
           <ForBrandsSection />
+          <WaitlistFormSection />
         </div>
       </div>
   );
