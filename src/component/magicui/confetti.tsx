@@ -1,79 +1,65 @@
 "use client";
-import { useEffect, useState } from "react";
+import React, { forwardRef } from "react";
+import confetti from "canvas-confetti";
 
 interface ConfettiProps {
   className?: string;
   colors?: string[];
-  count?: number;
   duration?: number;
+  buttonText?: string;
 }
 
-export const Confetti = ({
-  className,
-  colors = ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff"],
-  count = 100,
-  duration = 3000,
-}: ConfettiProps) => {
-  const [particles, setParticles] = useState<Array<{
-    id: number;
-    x: number;
-    y: number;
-    vx: number;
-    vy: number;
-    color: string;
-    size: number;
-  }>>([]);
+export const Confetti = forwardRef<HTMLButtonElement, ConfettiProps>(
+  (
+    {
+      className,
+      colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"],
+      duration = 3000,
+      buttonText = "Trigger Side Cannons",
+    },
+    ref
+  ) => {
+    const handleClick = () => {
+      const end = Date.now() + duration;
 
-  useEffect(() => {
-    const newParticles = Array.from({ length: count }, (_, i) => ({
-      id: i,
-      x: Math.random() * window.innerWidth,
-      y: -10,
-      vx: (Math.random() - 0.5) * 8,
-      vy: Math.random() * 3 + 2,
-      color: colors[Math.floor(Math.random() * colors.length)],
-      size: Math.random() * 4 + 2,
-    }));
+      const frame = () => {
+        if (Date.now() > end) return;
 
-    setParticles(newParticles);
+        confetti({
+          particleCount: 2,
+          angle: 60,
+          spread: 55,
+          startVelocity: 60,
+          origin: { x: 0, y: 0.5 },
+          colors: colors,
+        });
+        confetti({
+          particleCount: 2,
+          angle: 120,
+          spread: 55,
+          startVelocity: 60,
+          origin: { x: 1, y: 0.5 },
+          colors: colors,
+        });
 
-    const interval = setInterval(() => {
-      setParticles((prev) =>
-        prev.map((particle) => ({
-          ...particle,
-          x: particle.x + particle.vx,
-          y: particle.y + particle.vy,
-          vy: particle.vy + 0.1, // gravity
-        }))
-      );
-    }, 16);
+        requestAnimationFrame(frame);
+      };
 
-    const timeout = setTimeout(() => {
-      clearInterval(interval);
-      setParticles([]);
-    }, duration);
-
-    return () => {
-      clearInterval(interval);
-      clearTimeout(timeout);
+      frame();
     };
-  }, [count, colors, duration]);
 
-  return (
-    <div className={`fixed inset-0 pointer-events-none z-50 ${className || ""}`}>
-      {particles.map((particle) => (
-        <div
-          key={particle.id}
-          className="absolute w-2 h-2 rounded-full"
-          style={{
-            left: particle.x,
-            top: particle.y,
-            backgroundColor: particle.color,
-            width: particle.size,
-            height: particle.size,
-          }}
-        />
-      ))}
-    </div>
-  );
-}; 
+    return (
+      <div className={`relative ${className || ""}`}>
+        <button
+          onClick={handleClick}
+          className="px-4 py-2 bg-purple-500 text-white rounded"
+          ref={ref}
+        >
+          {buttonText}
+        </button>
+      </div>
+    );
+  }
+);
+Confetti.displayName = "Confetti";
+export default Confetti; 
