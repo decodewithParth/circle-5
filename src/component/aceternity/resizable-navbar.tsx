@@ -233,12 +233,13 @@ export const NavbarLogo = () => {
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-base font-normal text-black"
     >
       <img
-        src="https://assets.aceternity.com/logo-dark.png"
+        src="/Circle new.png"
         alt="logo"
         width={30}
         height={30}
+        className="rounded-lg"
       />
-      <span className="font-medium text-black dark:text-white">Startup</span>
+      <span className="font-extrabold text-[#9146ff] dark:text-white">Circle</span>
     </a>
   );
 };
