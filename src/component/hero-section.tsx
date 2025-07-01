@@ -4,21 +4,46 @@ import { AuroraText } from "@/component/magicui/aurora-text";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
+// Add CSS animation for smooth word transitions
+const wordAnimationStyle = `
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-10px); }
+    50% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+`;
+
 const PLACE1_WORDS = ["Brand", "Business", "Startup", "MSME", "SME"];
 const PLACE2_WORDS = ["Creator", "Influencer"];
 
 function WordRotator({ words, interval = 1500, className }: { words: string[]; interval?: number; className?: string }) {
   const [index, setIndex] = useState(0);
+  
   useEffect(() => {
-    const id = setInterval(() => setIndex(i => (i + 1) % words.length), interval);
+    const id = setInterval(() => {
+      setIndex(i => (i + 1) % words.length);
+    }, interval);
     return () => clearInterval(id);
   }, [words, interval]);
-  return <span className={cn("inline-block transition-all duration-500", className)}>{words[index]}</span>;
+  
+  return (
+    <span 
+      className={cn(
+        "inline-block transition-all duration-300 ease-in-out",
+        className
+      )}
+      key={index}
+    >
+      {words[index]}
+    </span>
+  );
 }
 
 export function HeroSection() {
   return (
-    <section className="w-full flex flex-col md:flex-row items-center justify-between min-h-[70vh] py-12 md:py-24 px-4 md:px-16 gap-8 bg-transparent !bg-transparent">
+    <>
+      <style dangerouslySetInnerHTML={{ __html: wordAnimationStyle }} />
+      <section className="w-full flex flex-col md:flex-row items-center justify-between min-h-[70vh] py-12 md:py-24 px-4 md:px-16 gap-8 bg-transparent !bg-transparent">
       {/* Left: Text */}
       <div className="flex-1 flex flex-col items-start justify-center max-w-xl gap-6">
         <h1 className="text-3xl md:text-5xl font-bold leading-tight">
@@ -32,6 +57,7 @@ export function HeroSection() {
         </h2>
       </div>
     </section>
+    </>
   );
 }
 
