@@ -9,7 +9,6 @@ import {
   NavbarButton
 } from "../component/aceternity/resizable-navbar";
 import { ShimmerButton } from "../component/magicui/shimmer-button";
-import GridDotBackground from "../component/aceternity/grid-dot-background";
 import { motion } from "framer-motion";
 import { GoCopilot } from "react-icons/go";
 import { HeroSection } from "../component/hero-section";
@@ -19,7 +18,6 @@ import { ForBrandsSection } from "../component/for-brands-section";
 
 export default function Home() {
   return (
-    <GridDotBackground>
       <div className="grid grid-rows-[auto_1fr_20px] items-center justify-items-center min-h-screen pb-20 gap-16 font-[family-name:var(--font-geist-sans)] pt-0 p-0 sm:pt-0 sm:p-0">
         <Navbar>
           <NavBody>
@@ -46,6 +44,5 @@ export default function Home() {
           <ForBrandsSection />
         </div>
       </div>
-    </GridDotBackground>
   );
 }
