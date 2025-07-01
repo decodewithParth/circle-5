@@ -77,8 +77,11 @@ export default function WaitlistFormSection() {
     <section className="w-full max-w-xl mx-auto py-16 flex flex-col items-center gap-8">
       <ToastContainer position="top-center" autoClose={3000} />
       <div className="text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">
-          This Is Your Invite to the Inner Circle
+        <h2 className="text-4xl md:text-5xl font-bold mb-2 whitespace-nowrap">
+          This Is Your Invite to the{" "}
+          <span className="px-2 py-1 rounded bg-[#9146FF] text-white">
+            Inner Circle
+          </span>
         </h2>
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-4">
           We're launching soon. Be among the first to discover the new way
