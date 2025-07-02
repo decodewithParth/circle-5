@@ -15,6 +15,7 @@ import { EvervaultCard } from "@/component/aceternity/evervault-card-1";
 import { EvervaultCard as EvervaultCardSimple } from "@/component/aceternity/evervault-card";
 import { useState } from "react";
 import Image from "next/image";
+import { FooterSection } from "@/component/footer-section";
 
 export default function AboutPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -309,6 +310,7 @@ export default function AboutPage() {
           </section>
         </div>
       </div>
+      <FooterSection />
     </div>
   );
 } 
