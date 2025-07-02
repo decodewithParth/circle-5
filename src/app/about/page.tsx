@@ -14,6 +14,7 @@ import { ShimmerButton } from "@/component/magicui/shimmer-button";
 import { EvervaultCard } from "@/component/aceternity/evervault-card-1";
 import { EvervaultCard as EvervaultCardSimple } from "@/component/aceternity/evervault-card";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function AboutPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -226,8 +227,14 @@ export default function AboutPage() {
                     <div className="text-center">
                       <div className="relative mb-8">
                         <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-[#9146FF] to-purple-600 p-1 shadow-lg">
-                          <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                            <div className="text-5xl">👨‍💼</div>
+                          <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 overflow-hidden">
+                            <Image
+                              src="/Parth Profile Picture.jpg"
+                              alt="Parth Chauhan"
+                              width={160}
+                              height={160}
+                              className="w-full h-full rounded-full object-cover"
+                            />
                           </div>
                         </div>
                         <div className="absolute -top-2 -right-2 bg-[#9146FF] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
@@ -255,8 +262,14 @@ export default function AboutPage() {
                     <div className="text-center">
                       <div className="relative mb-8">
                         <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-[#9146FF] to-purple-600 p-1 shadow-lg">
-                          <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                            <div className="text-5xl">👨‍💻</div>
+                          <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 overflow-hidden">
+                            <Image
+                              src="/Jay Profile Picture.jpg"
+                              alt="Jay Bhatt"
+                              width={160}
+                              height={160}
+                              className="w-full h-full rounded-full object-cover"
+                            />
                           </div>
                         </div>
                         <div className="absolute -top-2 -right-2 bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
