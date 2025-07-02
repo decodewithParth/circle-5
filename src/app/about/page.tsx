@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import {
@@ -13,6 +11,8 @@ import {
   NavbarLogo,
 } from "@/component/aceternity/resizable-navbar";
 import { ShimmerButton } from "@/component/magicui/shimmer-button";
+import { EvervaultCard } from "@/component/aceternity/evervault-card-1";
+import { EvervaultCard as EvervaultCardSimple } from "@/component/aceternity/evervault-card";
 import { useState } from "react";
 
 export default function AboutPage() {
@@ -117,9 +117,13 @@ export default function AboutPage() {
           </section>
 
           {/* Story Section */}
-          <section className="py-20 px-4 bg-white dark:bg-black">
+          <section className="py-24 px-4 bg-gradient-to-b from-white to-gray-50 dark:from-black dark:to-neutral-950">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
+              <div className="text-center mb-20">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#9146FF]/10 border border-[#9146FF]/20 text-[#9146FF] text-sm font-medium mb-6">
+                  <span className="w-2 h-2 rounded-full bg-[#9146FF]"></span>
+                  The Beginning
+                </div>
                 <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
                   Our Story
                 </h2>
@@ -128,32 +132,73 @@ export default function AboutPage() {
                 </p>
               </div>
               
-              <div className="max-w-4xl mx-auto text-center space-y-6 text-lg text-gray-700 dark:text-gray-300">
-                <p>
-                  The idea for Circle was born while we were running our marketing agency, 
-                  <strong className="text-[#9146FF]"> Digital Devas</strong>. During our work with brands and creators, 
-                  we consistently faced two major challenges:
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-                  <div className="text-center">
-                    <div className="text-4xl mb-4">🔗</div>
-                    <h3 className="text-xl font-semibold mb-2">Genuine Connections</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      Finding authentic partnerships between brands and creators
+              <div className="max-w-5xl mx-auto">
+                {/* Main Story */}
+                <div className="bg-gradient-to-br from-white via-purple-50/30 to-blue-50/20 dark:from-neutral-900 dark:via-purple-950/20 dark:to-blue-950/10 rounded-3xl p-10 md:p-16 shadow-xl border border-[#9146FF]/30 backdrop-blur-sm mb-12 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#9146FF]/10 via-transparent to-purple-600/5 opacity-60"></div>
+                  <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-[#9146FF]/20 to-transparent rounded-full blur-3xl"></div>
+                  <div className="absolute bottom-0 right-0 w-40 h-40 bg-gradient-to-tl from-purple-600/20 to-transparent rounded-full blur-3xl"></div>
+                  <div className="relative z-10 text-center space-y-8">
+                    <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-[#9146FF]/15 to-purple-600/15 border border-[#9146FF]/30 text-[#9146FF] text-sm font-semibold shadow-lg">
+                      <span className="w-2 h-2 rounded-full bg-[#9146FF] animate-pulse"></span>
+                      Our Journey Begins
+                      <span className="w-2 h-2 rounded-full bg-[#9146FF] animate-pulse"></span>
+                    </div>
+                    <p className="text-xl md:text-2xl leading-relaxed text-gray-800 dark:text-gray-200 max-w-4xl mx-auto font-medium">
+                      The idea for Circle was born while we were running our marketing agency, 
+                      <strong className="text-[#9146FF] font-bold"> Digital Devas</strong>. During our work with brands and creators, 
+                      we consistently faced two major challenges that inspired our mission.
                     </p>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-4xl mb-4">🔍</div>
-                    <h3 className="text-xl font-semibold mb-2">Transparency</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      Ensuring clear communication and honest collaboration
-                    </p>
+                    <div className="flex justify-center items-center gap-6 mt-8">
+                      <div className="w-12 h-px bg-gradient-to-r from-transparent via-[#9146FF]/50 to-[#9146FF]"></div>
+                      <div className="w-3 h-3 rounded-full bg-gradient-to-br from-[#9146FF] to-purple-600 shadow-lg"></div>
+                      <div className="w-12 h-px bg-gradient-to-l from-transparent via-purple-600/50 to-purple-600"></div>
+                    </div>
                   </div>
                 </div>
-                <p className="mt-12">
-                  These challenges inspired us to create a platform that would revolutionize 
-                  how brands and creators connect, collaborate, and grow together.
-                </p>
+
+                {/* Challenges Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+                  <EvervaultCard
+                    text="01"
+                    title="Genuine Connections"
+                    description="Finding authentic partnerships between brands and creators that go beyond superficial collaborations and create lasting value for both parties. We discovered that most platforms focus on quantity over quality, leading to partnerships that don't deliver real results. Circle was built to prioritize meaningful connections that drive mutual growth and success."
+                    size="md"
+                    className="mx-auto"
+                  />
+                  
+                  <EvervaultCard
+                    text="02"
+                    title="Transparency"
+                    description="Ensuring clear communication, honest collaboration, and complete transparency in all aspects of brand-creator partnerships. The lack of transparency in the creator economy was a major pain point we identified. Circle provides complete visibility into partnership metrics, communication channels, and performance tracking to build trust between all parties involved."
+                    size="md"
+                    className="mx-auto"
+                  />
+                </div>
+
+                {/* Solution */}
+                <div className="text-center mb-8">
+                  <h3 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-4">
+                    The Ultimate Solution
+                  </h3>
+                </div>
+                <div className="flex justify-center mb-12">
+                  <EvervaultCardSimple
+                    text="💡"
+                    className="w-full max-w-md h-auto"
+                    showIcon={false}
+                  >
+                    <h3 className="text-2xl md:text-3xl font-bold mb-4 text-black dark:text-white">
+                      Circle
+                    </h3>
+                    <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                      These challenges inspired us to create a platform that would revolutionize 
+                      how brands and creators connect, collaborate, and grow together. 
+                      <strong className="text-[#9146FF] font-semibold">Circle</strong> was born from the belief that 
+                      authentic partnerships drive the best results.
+                    </p>
+                  </EvervaultCardSimple>
+                </div>
               </div>
             </div>
           </section>
