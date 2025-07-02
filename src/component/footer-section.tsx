@@ -49,7 +49,7 @@ export const FooterSection = () => {
 
   const socialLinks = [
     { name: "X", icon: XIcon, href: "https://x.com/heycircleapp" },
-    { name: "LinkedIn", icon: FaLinkedin, href: "https://linkedin.com/company/circle" },
+    { name: "LinkedIn", icon: FaLinkedin, href: "https://linkedin.com/company/107613168" },
     { name: "Instagram", icon: FaInstagram, href: "https://instagram.com/heycircle.app" },
     { name: "Email", icon: FaEnvelope, href: "mailto:team.heycircle@gmail.com" },
   ];
