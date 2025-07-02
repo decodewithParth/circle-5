@@ -12,17 +12,21 @@ import {
 export const FooterSection = () => {
   const currentYear = new Date().getFullYear();
 
+  const handleProductLinkClick = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const footerLinks = {
     product: [
       { name: "Features", href: "#features" },
       { name: "For Creators", href: "#for-creators" },
       { name: "For Brands", href: "#for-brands" },
-      { name: "Pricing", href: "#pricing" },
     ],
     company: [
       { name: "About Us", href: "#about-us" },
-      { name: "Blog", href: "#blog" },
-      { name: "Careers", href: "#careers" },
       { name: "Contact", href: "#contact" },
     ],
     support: [
@@ -87,12 +91,12 @@ export const FooterSection = () => {
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-gray-400 hover:text-[#9146FF] transition-colors duration-300"
+                  <button
+                    onClick={() => handleProductLinkClick(link.href)}
+                    className="text-gray-400 hover:text-[#9146FF] transition-colors duration-300 cursor-pointer"
                   >
                     {link.name}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
