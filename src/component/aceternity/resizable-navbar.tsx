@@ -229,8 +229,8 @@ export const MobileNavToggle = ({
 export const NavbarLogo = () => {
   return (
     <a
-      href="#"
-      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-base font-normal text-black"
+      href="/"
+      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-base font-normal text-black hover:opacity-80 transition-opacity"
     >
       <img
         src="/Circle new.png"
