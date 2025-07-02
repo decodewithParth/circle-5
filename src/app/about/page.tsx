@@ -204,9 +204,13 @@ export default function AboutPage() {
           </section>
 
           {/* Founders Section */}
-          <section className="py-20 px-4 bg-gray-100 dark:bg-neutral-950">
+          <section className="py-24 px-4 bg-gradient-to-b from-gray-100 via-white to-gray-50 dark:from-neutral-950 dark:via-black dark:to-neutral-950">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
+              <div className="text-center mb-20">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#9146FF]/10 border border-[#9146FF]/20 text-[#9146FF] text-sm font-medium mb-6">
+                  <span className="w-2 h-2 rounded-full bg-[#9146FF]"></span>
+                  Meet the Team
+                </div>
                 <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
                   Meet Our Founders
                 </h2>
@@ -215,33 +219,63 @@ export default function AboutPage() {
                 </p>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
                 {/* Founder */}
-                <div className="text-center">
-                  <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#9146FF] to-purple-600 p-1">
-                    <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center">
-                      <div className="text-3xl">👨‍💼</div>
+                <div className="group relative">
+                  <div className="bg-gradient-to-br from-white to-gray-50 dark:from-neutral-900 dark:to-neutral-800 rounded-3xl p-8 shadow-xl border border-gray-200 dark:border-neutral-700 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div className="text-center">
+                      <div className="relative mb-8">
+                        <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-[#9146FF] to-purple-600 p-1 shadow-lg">
+                          <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                            <div className="text-5xl">👨‍💼</div>
+                          </div>
+                        </div>
+                        <div className="absolute -top-2 -right-2 bg-[#9146FF] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                          Founder
+                        </div>
+                      </div>
+                      <h3 className="text-3xl font-bold mb-3 text-black dark:text-white">Parth Chauhan</h3>
+                      <p className="text-[#9146FF] font-semibold mb-6 text-lg">Founder & CEO</p>
+                      <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-lg">
+                        Visionary leader with a passion for connecting people and creating meaningful partnerships. 
+                        Parth brings strategic thinking and deep industry knowledge to drive Circle's mission forward.
+                      </p>
+                      <div className="mt-6 flex justify-center gap-4">
+                        <div className="w-2 h-2 rounded-full bg-[#9146FF]"></div>
+                        <div className="w-2 h-2 rounded-full bg-purple-600"></div>
+                        <div className="w-2 h-2 rounded-full bg-[#9146FF]"></div>
+                      </div>
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold mb-2 text-black dark:text-white">Parth Chauhan</h3>
-                  <p className="text-[#9146FF] font-semibold mb-4">Founder & CEO</p>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    Visionary leader with a passion for connecting people and creating meaningful partnerships.
-                  </p>
                 </div>
 
                 {/* Co-founder */}
-                <div className="text-center">
-                  <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#9146FF] to-purple-600 p-1">
-                    <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center">
-                      <div className="text-3xl">👨‍💻</div>
+                <div className="group relative">
+                  <div className="bg-gradient-to-br from-white to-gray-50 dark:from-neutral-900 dark:to-neutral-800 rounded-3xl p-8 shadow-xl border border-gray-200 dark:border-neutral-700 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div className="text-center">
+                      <div className="relative mb-8">
+                        <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-[#9146FF] to-purple-600 p-1 shadow-lg">
+                          <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                            <div className="text-5xl">👨‍💻</div>
+                          </div>
+                        </div>
+                        <div className="absolute -top-2 -right-2 bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                          Co-founder
+                        </div>
+                      </div>
+                      <h3 className="text-3xl font-bold mb-3 text-black dark:text-white">Jay Bhatt</h3>
+                      <p className="text-[#9146FF] font-semibold mb-6 text-lg">Co-founder & COO</p>
+                      <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-lg">
+                        Operations leader driving the platform's strategic growth and business development. 
+                        Jay combines operational excellence with strategic vision to scale Circle's impact.
+                      </p>
+                      <div className="mt-6 flex justify-center gap-4">
+                        <div className="w-2 h-2 rounded-full bg-purple-600"></div>
+                        <div className="w-2 h-2 rounded-full bg-[#9146FF]"></div>
+                        <div className="w-2 h-2 rounded-full bg-purple-600"></div>
+                      </div>
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold mb-2 text-black dark:text-white">Jay Bhatt</h3>
-                  <p className="text-[#9146FF] font-semibold mb-4">Co-founder & CTO</p>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    Technical innovator driving the platform's development and growth strategy.
-                  </p>
                 </div>
               </div>
             </div>
