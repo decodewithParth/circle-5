@@ -36,7 +36,7 @@ export const FooterSection = () => {
       { name: "For Brands", href: "#for-brands" },
     ],
     company: [
-      { name: "About Us", href: "#about-us" },
+      { name: "About Us", href: "/about" },
       { name: "Contact", href: "#contact" },
     ],
     support: [
