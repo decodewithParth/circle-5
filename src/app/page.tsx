@@ -29,7 +29,7 @@ export default function Home() {
                 { name: "Features", link: "#features" },
                 { name: "For Creators", link: "#for-creators" },
                 { name: "For Brands", link: "#for-brands" },
-                { name: "About Us", link: "#about-us" },
+                { name: "About Us", link: "/about" },
               ]}
             />
             <ShimmerButton>Early Access</ShimmerButton>
@@ -41,7 +41,9 @@ export default function Home() {
             <FeaturesSection />
             <ForCreatorsSection />
             <ForBrandsSection />
-            <WaitlistFormSection />
+            <div id="waitlist">
+              <WaitlistFormSection />
+            </div>
           </div>
         </div>
         <FooterSection />
