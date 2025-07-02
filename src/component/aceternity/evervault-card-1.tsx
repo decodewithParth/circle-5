@@ -98,13 +98,13 @@ export const EvervaultCard = ({
       </div>
 
       {title && (
-        <h2 className="dark:text-white text-black mt-4 text-lg font-semibold">
+        <h2 className="dark:text-white text-black mt-4 text-xl font-semibold">
           {title}
         </h2>
       )}
       {description && (
         <div className="mt-2 w-full">
-          <p className="dark:text-white text-black text-sm font-light w-full break-words">
+          <p className="dark:text-white text-black text-base font-light w-full break-words">
             {isExpanded ? description : truncatedDescription}
           </p>
           {showReadMore && (
