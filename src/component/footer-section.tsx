@@ -23,9 +23,16 @@ export const FooterSection = () => {
   );
 
   const handleProductLinkClick = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    // Check if we're on the about page
+    if (window.location.pathname === '/about') {
+      // Navigate to home page with the section hash
+      window.location.href = `/${href}`;
+    } else {
+      // If already on home page, just scroll to the section
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
