@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { ReactNode, useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 interface MarqueeProps {
   children: ReactNode;
@@ -132,12 +133,14 @@ const ReviewCard = ({
         "relative h-48 w-36 cursor-pointer overflow-hidden rounded-xl border border-gray-200/20 transition-all duration-300 mx-2"
       )}
     >
-      {/* Background Image or Placeholder */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${img})`,
-        }}
+      {/* Optimized Next.js Image */}
+      <Image
+        src={img}
+        alt={name}
+        fill
+        className="object-cover rounded-xl"
+        sizes="(max-width: 768px) 100vw, 200px"
+        priority={false}
       />
       {/* Blur Effect at Bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/20 to-transparent backdrop-blur-md" />
@@ -160,7 +163,7 @@ function splitIntoGroups(arr: Review[], groupSize: number): Review[][] {
 }
 
 export function Marquee3D() {
-  const groups = splitIntoGroups(reviews, 4); // 3 groups of 4
+  const groups = splitIntoGroups(reviews, 3); // 4 groups of 3
   return (
     <div className="relative flex h-96 w-full flex-row items-center justify-center gap-4 overflow-hidden [perspective:300px] bg-transparent">
       <div
@@ -176,10 +179,10 @@ export function Marquee3D() {
             pauseOnHover
             vertical
             className="[--duration:40s] bg-transparent"
-            reverse={idx === 1} // alternate direction for middle column
+            reverse={idx % 2 === 1} // alternate direction for every other column
           >
             <div className="flex flex-col gap-4 bg-transparent">
-              {Array.from({ length: 20 }).map((_, repeatIdx) =>
+              {Array.from({ length: 2 }).map((_, repeatIdx) =>
                 group.map((review, i) => (
                   <ReviewCard key={review.username + i + '-' + repeatIdx} {...review} />
                 ))
