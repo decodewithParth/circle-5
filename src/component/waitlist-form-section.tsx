@@ -80,9 +80,9 @@ export default function WaitlistFormSection() {
         <ToastContainer position="top-center" autoClose={3000} />
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-2 whitespace-nowrap text-white">
-            This Is Your Invite to the{" "}
+            This Is Your Invite to {" "}
             <span className="px-2 py-1 rounded bg-[#9146FF] text-white">
-              Inner Circle
+              Join Inner Circle
             </span>
           </h2>
           <p className="text-lg md:text-xl text-gray-300 mb-4">
