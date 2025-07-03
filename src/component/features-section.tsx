@@ -40,7 +40,7 @@ export function FeaturesSection() {
     <div id="features" className="features-section-wrapper w-full flex flex-col justify-center items-center py-12 relative overflow-hidden bg-gray-100 backdrop-blur-md">
       {/* Top gradient for smooth merging */}
       <div className="pointer-events-none absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-white/80 to-transparent z-10" />
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 z-20">
+      <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-center mb-10 z-20">
         Features
       </h2>
       {/* <RetroGrid className="z-0" /> */}
