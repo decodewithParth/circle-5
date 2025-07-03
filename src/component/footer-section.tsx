@@ -44,7 +44,7 @@ export const FooterSection = () => {
     ],
     company: [
       { name: "About Us", href: "/about" },
-      { name: "Contact Us", href: "#contact" },
+      { name: "Contact Us", href: "/contact" },
     ],
     support: [
       { name: "Help Center", href: "#help" },
