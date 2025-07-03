@@ -47,7 +47,6 @@ export const FooterSection = () => {
       { name: "Contact Us", href: "/contact" },
     ],
     support: [
-      { name: "Help Center", href: "#help" },
       { name: "Privacy Policy", href: "#privacy" },
       { name: "Terms of Service", href: "#terms" },
       { name: "Cookie Policy", href: "#cookies" },
