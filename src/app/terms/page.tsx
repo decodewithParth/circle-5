@@ -103,7 +103,7 @@ export default function TermsOfServicePage() {
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Introduction</h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    Welcome to Circle. These Terms of Service ("Terms") govern your use of our platform that connects brands and creators. By accessing or using Circle, you agree to be bound by these Terms and all applicable laws and regulations.
+                    Welcome to Circle. These Terms of Service ("Terms") govern your use of our mobile application that connects brands and creators. By downloading, installing, or using the Circle app, you agree to be bound by these Terms and all applicable laws and regulations.
                   </p>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                     If you do not agree with any of these terms, you are prohibited from using or accessing this platform. The materials contained in this platform are protected by applicable copyright and trademark law.
@@ -114,12 +114,12 @@ export default function TermsOfServicePage() {
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Definitions</h2>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
-                    <li><strong>"Platform"</strong> refers to Circle, our website, and all related services</li>
-                    <li><strong>"User"</strong> refers to any individual or entity using our platform</li>
+                    <li><strong>"App"</strong> refers to the Circle mobile application</li>
+                    <li><strong>"User"</strong> refers to any individual or entity using our mobile application</li>
                     <li><strong>"Creator"</strong> refers to content creators, influencers, and individuals offering creative services</li>
                     <li><strong>"Brand"</strong> refers to businesses, companies, and organizations seeking creator partnerships</li>
-                    <li><strong>"Content"</strong> refers to any text, images, videos, or other materials shared on the platform</li>
-                    <li><strong>"Services"</strong> refers to all features and functionality provided by Circle</li>
+                    <li><strong>"Content"</strong> refers to any text, images, videos, or other materials shared through the app</li>
+                    <li><strong>"Services"</strong> refers to all features and functionality provided by the Circle app</li>
                   </ul>
                 </div>
 
@@ -127,7 +127,7 @@ export default function TermsOfServicePage() {
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Account Registration</h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    To use certain features of our platform, you must create an account. You agree to:
+                    To use our mobile application, you must create an account. You agree to:
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
                     <li>Provide accurate, current, and complete information during registration</li>
@@ -138,20 +138,22 @@ export default function TermsOfServicePage() {
                   </ul>
                 </div>
 
-                {/* Platform Usage */}
+                {/* App Usage */}
                 <div className="mb-12">
-                  <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Platform Usage</h2>
+                  <h2 className="text-3xl font-bold text-black dark:text-white mb-6">App Usage</h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    You may use our platform for lawful purposes only. You agree not to:
+                    You may use our mobile application for lawful purposes only. You agree not to:
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
-                    <li>Use the platform for any illegal or unauthorized purpose</li>
+                    <li>Use the app for any illegal or unauthorized purpose</li>
                     <li>Violate any applicable laws or regulations</li>
                     <li>Infringe upon the rights of others</li>
                     <li>Upload or share harmful, offensive, or inappropriate content</li>
                     <li>Attempt to gain unauthorized access to our systems</li>
-                    <li>Interfere with or disrupt the platform's functionality</li>
-                    <li>Use automated systems to access the platform without permission</li>
+                    <li>Interfere with or disrupt the app's functionality</li>
+                    <li>Use automated systems to access the app without permission</li>
+                    <li>Modify, reverse engineer, or attempt to extract source code from the app</li>
+                    <li>Use the app on unauthorized devices or operating systems</li>
                   </ul>
                 </div>
 
@@ -159,7 +161,7 @@ export default function TermsOfServicePage() {
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Creator Responsibilities</h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    As a creator using our platform, you agree to:
+                    As a creator using our mobile application, you agree to:
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
                     <li>Provide accurate and truthful information about your services and experience</li>
@@ -176,7 +178,7 @@ export default function TermsOfServicePage() {
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Brand Responsibilities</h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    As a brand using our platform, you agree to:
+                    As a brand using our mobile application, you agree to:
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
                     <li>Provide clear and accurate campaign briefs and requirements</li>

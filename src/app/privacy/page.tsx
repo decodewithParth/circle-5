@@ -128,13 +128,14 @@ export default function PrivacyPolicyPage() {
 
                   <h3 className="text-2xl font-semibold text-black dark:text-white mb-4">Usage Information</h3>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    We automatically collect certain information about your use of our platform:
+                    We automatically collect certain information about your use of our mobile application:
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
-                    <li>Log data (IP address, browser type, pages visited)</li>
-                    <li>Device information (device type, operating system)</li>
-                    <li>Usage patterns and interactions with the platform</li>
-                    <li>Cookies and similar tracking technologies</li>
+                    <li>Device information (device type, operating system, app version)</li>
+                    <li>Location data (with your permission)</li>
+                    <li>Usage patterns and interactions with the app</li>
+                    <li>App performance and crash reports</li>
+                    <li>Push notification interactions</li>
                   </ul>
                 </div>
 
@@ -145,12 +146,14 @@ export default function PrivacyPolicyPage() {
                     We use the collected information for the following purposes:
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
-                    <li>To provide and maintain our platform services</li>
+                    <li>To provide and maintain our mobile application services</li>
                     <li>To facilitate connections between brands and creators</li>
                     <li>To process payments and manage financial transactions</li>
                     <li>To communicate with you about your account and services</li>
-                    <li>To improve our platform and develop new features</li>
-                    <li>To ensure platform security and prevent fraud</li>
+                    <li>To improve our app and develop new features</li>
+                    <li>To ensure app security and prevent fraud</li>
+                    <li>To send push notifications and updates</li>
+                    <li>To provide location-based services (with your permission)</li>
                     <li>To comply with legal obligations</li>
                   </ul>
                 </div>
@@ -162,7 +165,7 @@ export default function PrivacyPolicyPage() {
                     We do not sell, trade, or rent your personal information to third parties. We may share your information in the following circumstances:
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
-                    <li><strong>With other users:</strong> Your profile information may be visible to other users on the platform</li>
+                    <li><strong>With other users:</strong> Your profile information may be visible to other users on the app</li>
                     <li><strong>Service providers:</strong> We may share information with trusted third-party service providers</li>
                     <li><strong>Legal requirements:</strong> We may disclose information if required by law or to protect our rights</li>
                     <li><strong>Business transfers:</strong> In case of merger, acquisition, or sale of assets</li>
@@ -192,12 +195,19 @@ export default function PrivacyPolicyPage() {
                   </ul>
                 </div>
 
-                {/* Cookies */}
+                {/* App Permissions */}
                 <div className="mb-12">
-                  <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Cookies and Tracking Technologies</h2>
+                  <h2 className="text-3xl font-bold text-black dark:text-white mb-6">App Permissions and Device Access</h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    We use cookies and similar tracking technologies to enhance your experience on our platform. You can control cookie settings through your browser preferences.
+                    Our mobile application may request access to certain features on your device. You can control these permissions through your device settings:
                   </p>
+                  <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
+                    <li><strong>Location Services:</strong> To help you find nearby creators and brands (optional)</li>
+                    <li><strong>Camera and Photos:</strong> To upload profile pictures and content</li>
+                    <li><strong>Push Notifications:</strong> To keep you updated about new opportunities</li>
+                    <li><strong>Storage:</strong> To save content and cache app data</li>
+                    <li><strong>Microphone:</strong> For voice messages and calls (if applicable)</li>
+                  </ul>
                 </div>
 
                 {/* Third-Party Links */}

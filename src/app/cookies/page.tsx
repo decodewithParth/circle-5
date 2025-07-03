@@ -103,7 +103,7 @@ export default function CookiePolicyPage() {
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-black dark:text-white mb-6">What Are Cookies?</h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    Think of cookies as tiny helpers that make your experience on Circle better! They're small text files that websites (including ours) store on your device to remember your preferences and make things work smoothly.
+                    Think of cookies as tiny helpers that make your experience on the Circle app better! They're small text files that mobile applications (including ours) store on your device to remember your preferences and make things work smoothly.
                   </p>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                     Just like how you might save your favorite settings on your phone, cookies help us remember things like your login status, language preferences, and what you've been looking at so we can give you a more personalized experience.
@@ -114,7 +114,7 @@ export default function CookiePolicyPage() {
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-black dark:text-white mb-6">How We Use Cookies</h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    We use cookies to make Circle work better for you. Here's what they help us do:
+                    We use cookies to make the Circle app work better for you. Here's what they help us do:
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
                     <li><strong>Keep you logged in:</strong> So you don't have to enter your password every time</li>
@@ -122,7 +122,7 @@ export default function CookiePolicyPage() {
                     <li><strong>Make the site faster:</strong> By storing information locally on your device</li>
                     <li><strong>Improve your experience:</strong> By showing you relevant content and features</li>
                     <li><strong>Keep things secure:</strong> By helping us detect and prevent fraud</li>
-                    <li><strong>Understand how you use Circle:</strong> So we can make it better for everyone</li>
+                    <li><strong>Understand how you use the Circle app:</strong> So we can make it better for everyone</li>
                   </ul>
                 </div>
 
@@ -132,7 +132,7 @@ export default function CookiePolicyPage() {
                   
                   <h3 className="text-2xl font-semibold text-black dark:text-white mb-4">Essential Cookies</h3>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    These are like the foundation of a house - they're absolutely necessary for Circle to work properly. They help with basic functions like:
+                    These are like the foundation of a house - they're absolutely necessary for the Circle app to work properly. They help with basic functions like:
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
                     <li>Keeping you logged in securely</li>
@@ -143,7 +143,7 @@ export default function CookiePolicyPage() {
 
                   <h3 className="text-2xl font-semibold text-black dark:text-white mb-4">Performance Cookies</h3>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    These cookies help us understand how you use Circle so we can make it better. They collect information like:
+                    These cookies help us understand how you use the Circle app so we can make it better. They collect information like:
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
                     <li>Which pages you visit most often</li>
@@ -168,7 +168,7 @@ export default function CookiePolicyPage() {
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Third-Party Cookies</h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    Sometimes we work with trusted partners who also use cookies on our site. These help us provide you with better services like:
+                    Sometimes we work with trusted partners who also use cookies in our app. These help us provide you with better services like:
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
                     <li><strong>Analytics services:</strong> To understand how people use Circle (like Google Analytics)</li>
@@ -188,20 +188,22 @@ export default function CookiePolicyPage() {
                     You're in control! You can manage cookies in several ways:
                   </p>
                   
-                  <h3 className="text-2xl font-semibold text-black dark:text-white mb-4">Browser Settings</h3>
+                  <h3 className="text-2xl font-semibold text-black dark:text-white mb-4">Device Settings</h3>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    Most browsers let you control cookies through their settings. You can:
+                    You can control cookies and app permissions through your device settings. You can:
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
-                    <li>Block all cookies (though this might make some websites not work properly)</li>
+                    <li>Block all cookies (though this might make some apps not work properly)</li>
                     <li>Block only third-party cookies</li>
-                    <li>Delete cookies when you close your browser</li>
+                    <li>Delete cookies when you close the app</li>
                     <li>See what cookies are stored on your device</li>
+                    <li>Control app permissions (location, camera, notifications, etc.)</li>
+                    <li>Clear app data and cache</li>
                   </ul>
 
-                  <h3 className="text-2xl font-semibold text-black dark:text-white mb-4">Our Cookie Settings</h3>
+                  <h3 className="text-2xl font-semibold text-black dark:text-white mb-4">Our App Settings</h3>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    We're working on adding cookie preference settings directly to Circle so you can easily choose what types of cookies you want to allow.
+                    We're working on adding cookie and permission preference settings directly to the Circle app so you can easily choose what types of cookies and permissions you want to allow.
                   </p>
                 </div>
 
@@ -209,16 +211,18 @@ export default function CookiePolicyPage() {
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-black dark:text-white mb-6">What Happens If You Disable Cookies?</h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    If you choose to disable cookies, here's what might happen:
+                    If you choose to disable cookies or app permissions, here's what might happen:
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
                     <li><strong>You'll need to log in more often</strong> - We won't be able to remember you</li>
-                    <li><strong>Some features might not work</strong> - Like saving your preferences</li>
-                    <li><strong>The site might be slower</strong> - We'll need to load everything fresh each time</li>
+                    <li><strong>Some features might not work</strong> - Like saving your preferences or location-based services</li>
+                    <li><strong>The app might be slower</strong> - We'll need to load everything fresh each time</li>
                     <li><strong>You might see less relevant content</strong> - We won't know what you're interested in</li>
+                    <li><strong>Push notifications won't work</strong> - If you disable notification permissions</li>
+                    <li><strong>Location features won't work</strong> - If you disable location permissions</li>
                   </ul>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    But don't worry - the core features of Circle will still work! You'll just have a more basic experience.
+                    But don't worry - the core features of the Circle app will still work! You'll just have a more basic experience.
                   </p>
                 </div>
 
@@ -239,10 +243,10 @@ export default function CookiePolicyPage() {
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Questions About Cookies?</h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    We want to be transparent about how we use cookies and make sure you understand your choices. If you have any questions about our cookie policy or how we use cookies, please don't hesitate to reach out using the information on our Contact Us page.
+                    We want to be transparent about how we use cookies and app permissions and make sure you understand your choices. If you have any questions about our cookie policy or how we use cookies and permissions, please don't hesitate to reach out using the information on our Contact Us page.
                   </p>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    We're here to help and make sure you feel comfortable with how we use cookies to improve your experience on Circle!
+                    We're here to help and make sure you feel comfortable with how we use cookies and permissions to improve your experience on the Circle app!
                   </p>
                 </div>
 
