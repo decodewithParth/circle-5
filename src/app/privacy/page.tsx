@@ -89,7 +89,7 @@ export default function PrivacyPolicyPage() {
               
               {/* Subtitle */}
               <h2 className="text-lg md:text-xl font-medium text-gray-700 dark:text-gray-200 max-w-3xl leading-relaxed">
-                Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                Last updated: July 3, 2025
               </h2>
             </div>
           </section>
