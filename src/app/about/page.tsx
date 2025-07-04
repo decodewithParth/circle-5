@@ -192,19 +192,14 @@ export default function AboutPage() {
 
   return (
     <div className="flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)] pt-0 p-0 sm:pt-0 sm:p-0">
-      {/* Navbar */}
       <Navbar>
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <ShimmerButton 
-            onClick={() => window.location.href = '/#waitlist'}
-            className="text-sm"
-          >
+          <ShimmerButton onClick={() => window.location.href = '/#waitlist'} className="text-sm">
             Join Waitlist
           </ShimmerButton>
         </NavBody>
-
         <MobileNav>
           <MobileNavHeader>
             <NavbarLogo />
@@ -222,7 +217,7 @@ export default function AboutPage() {
               className="flex-col items-start gap-4"
               onItemClick={() => setIsMobileMenuOpen(false)}
             />
-            <ShimmerButton 
+            <ShimmerButton
               onClick={() => {
                 window.location.href = '/#waitlist';
                 setIsMobileMenuOpen(false);

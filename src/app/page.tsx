@@ -8,7 +8,11 @@ import {
   NavBody,
   NavItems,
   NavbarLogo,
-  NavbarButton
+  NavbarButton,
+  MobileNav,
+  MobileNavHeader,
+  MobileNavMenu,
+  MobileNavToggle
 } from "../component/aceternity/resizable-navbar";
 import { ShimmerButton } from "../component/magicui/shimmer-button";
 import { motion } from "framer-motion";
@@ -19,9 +23,16 @@ import { ForCreatorsSection } from "../component/for-creators-section";
 import { ForBrandsSection } from "../component/for-brands-section";
 import WaitlistFormSection from "../component/waitlist-form-section";
 import { FooterSection } from "../component/footer-section";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navItems = [
+    { name: "Features", link: "#features" },
+    { name: "For Creators", link: "#for-creators" },
+    { name: "For Brands", link: "#for-brands" },
+    { name: "About Us", link: "/about" },
+  ];
   useEffect(() => {
     // Handle scroll to section when page loads with hash
     if (typeof window !== 'undefined') {
@@ -42,16 +53,34 @@ export default function Home() {
         <Navbar>
           <NavBody>
             <NavbarLogo />
-            <NavItems
-              items={[
-                { name: "Features", link: "#features" },
-                { name: "For Creators", link: "#for-creators" },
-                { name: "For Brands", link: "#for-brands" },
-                { name: "About Us", link: "/about" },
-              ]}
-            />
+            <NavItems items={navItems} />
             <ShimmerButton>Early Access</ShimmerButton>
           </NavBody>
+          <MobileNav>
+            <MobileNavHeader>
+              <NavbarLogo />
+              <MobileNavToggle
+                isOpen={isMobileMenuOpen}
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              />
+            </MobileNavHeader>
+            <MobileNavMenu
+              isOpen={isMobileMenuOpen}
+              onClose={() => setIsMobileMenuOpen(false)}
+            >
+              <NavItems
+                items={navItems}
+                className="flex-col items-start gap-4"
+                onItemClick={() => setIsMobileMenuOpen(false)}
+              />
+              <ShimmerButton
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="w-full text-sm"
+              >
+                Early Access
+              </ShimmerButton>
+            </MobileNavMenu>
+          </MobileNav>
         </Navbar>
         <div className="flex-1 w-full">
           <HeroSection />
