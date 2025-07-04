@@ -54,14 +54,12 @@ export default function Home() {
           </NavBody>
         </Navbar>
         <div className="flex-1 w-full">
-          <div className="container mx-auto">
-            <HeroSection />
-            <FeaturesSection />
-            <ForCreatorsSection />
-            <ForBrandsSection />
-            <div id="waitlist">
-              <WaitlistFormSection />
-            </div>
+          <HeroSection />
+          <FeaturesSection />
+          <ForCreatorsSection />
+          <ForBrandsSection />
+          <div id="waitlist">
+            <WaitlistFormSection />
           </div>
         </div>
         <FooterSection />
