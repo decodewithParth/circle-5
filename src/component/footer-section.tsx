@@ -62,9 +62,9 @@ export const FooterSection = () => {
 
   return (
     <footer className="bg-neutral-950 text-white">
-      <div className="container mx-auto px-6 py-16">
+      <div className="container mx-auto px-4 py-8 text-center md:text-left items-center md:items-start">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-6 items-center md:items-start justify-center md:justify-start">
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <motion.div
@@ -81,7 +81,7 @@ export const FooterSection = () => {
                 Connecting brands and creators in the most innovative way. 
                 Join the revolution of authentic partnerships and meaningful collaborations.
               </p>
-                            <div className="flex space-x-4">
+              <div className="flex space-x-4 justify-center md:justify-start mx-auto md:mx-0">
                 {socialLinks.map((social) => (
                   <a
                     key={social.name}
@@ -104,7 +104,7 @@ export const FooterSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <h4 className="text-lg font-semibold mb-4">Product</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3 flex flex-col items-center md:items-start justify-center md:justify-start mx-auto md:mx-0">
               {footerLinks.product.map((link) => (
                 <li key={link.name}>
                   <button
@@ -125,7 +125,7 @@ export const FooterSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h4 className="text-lg font-semibold mb-4">Company</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3 flex flex-col items-center md:items-start justify-center md:justify-start mx-auto md:mx-0">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
                   <a
@@ -146,7 +146,7 @@ export const FooterSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <h4 className="text-lg font-semibold mb-4">Support</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3 flex flex-col items-center md:items-start justify-center md:justify-start mx-auto md:mx-0">
               {footerLinks.support.map((link) => (
                 <li key={link.name}>
                   <a
@@ -162,14 +162,14 @@ export const FooterSection = () => {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-800 mb-8"></div>
+        <div className="border-t border-gray-800 mb-4"></div>
 
         {/* Bottom Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex flex-col md:flex-row justify-between items-center"
+          className="flex flex-col md:flex-row justify-between items-center text-center md:text-left"
         >
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
             © {currentYear} Circle. All rights reserved.
