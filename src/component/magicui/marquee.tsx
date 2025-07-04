@@ -130,7 +130,7 @@ const ReviewCard = ({
   return (
     <div
       className={cn(
-        "relative h-48 w-36 cursor-pointer overflow-hidden rounded-xl border border-gray-200/20 transition-all duration-300 mx-2"
+        "relative h-36 w-24 sm:h-48 sm:w-36 cursor-pointer overflow-hidden rounded-xl border border-gray-200/20 transition-all duration-300 mx-1 sm:mx-2"
       )}
     >
       {/* Optimized Next.js Image */}
@@ -143,11 +143,11 @@ const ReviewCard = ({
         priority={false}
       />
       {/* Blur Effect at Bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/20 to-transparent backdrop-blur-md" />
+      <div className="absolute bottom-0 left-0 right-0 h-10 sm:h-16 bg-gradient-to-t from-black/20 to-transparent backdrop-blur-md" />
       {/* Creator Info */}
       <div className="absolute bottom-2 left-2 right-2 flex flex-col items-start">
-        <h3 className="text-sm font-semibold text-white truncate">{name}</h3>
-        <p className="text-xs text-gray-300 truncate">{category}</p>
+        <h3 className="text-xs sm:text-sm font-semibold text-white truncate">{name}</h3>
+        <p className="text-[10px] sm:text-xs text-gray-300 truncate">{category}</p>
       </div>
     </div>
   );
@@ -165,12 +165,12 @@ function splitIntoGroups(arr: Review[], groupSize: number): Review[][] {
 export function Marquee3D() {
   const groups = splitIntoGroups(reviews, 3); // 4 groups of 3
   return (
-    <div className="relative flex h-96 w-full flex-row items-center justify-center gap-4 overflow-hidden [perspective:300px] bg-transparent">
+    <div className="relative flex h-64 sm:h-80 md:h-96 w-full flex-row items-center justify-center gap-2 sm:gap-4 overflow-x-auto overflow-y-hidden [perspective:300px] bg-transparent">
       <div
-        className="flex flex-row items-center gap-4 bg-transparent"
+        className="flex flex-row items-center gap-2 sm:gap-4 bg-transparent min-w-0 w-full max-w-full"
         style={{
           transform:
-            "translateX(-100px) translateY(0px) translateZ(-100px) rotateX(20deg) rotateY(-10deg) rotateZ(20deg)",
+            "translateX(-40px) translateY(0px) translateZ(-60px) rotateX(10deg) rotateY(-5deg) rotateZ(10deg)",
         }}
       >
         {groups.map((group, idx) => (
@@ -181,7 +181,7 @@ export function Marquee3D() {
             className="[--duration:40s] bg-transparent"
             reverse={idx % 2 === 1} // alternate direction for every other column
           >
-            <div className="flex flex-col gap-4 bg-transparent">
+            <div className="flex flex-col gap-2 sm:gap-4 bg-transparent">
               {Array.from({ length: 2 }).map((_, repeatIdx) =>
                 group.map((review, i) => (
                   <ReviewCard key={review.username + i + '-' + repeatIdx} {...review} />
