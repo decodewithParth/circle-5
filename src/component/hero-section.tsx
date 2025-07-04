@@ -44,23 +44,23 @@ export function HeroSection() {
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: wordAnimationStyle }} />
-      <section className="w-full flex flex-col md:flex-row items-center justify-between min-h-[70vh] py-12 md:py-24 px-4 md:px-16 gap-8 bg-transparent !bg-transparent">
+      <section className="w-full flex flex-col md:flex-row items-center justify-between min-h-[70vh] py-8 sm:py-12 md:py-24 px-2 sm:px-4 md:px-16 gap-6 sm:gap-8 bg-transparent !bg-transparent">
       {/* Left: Text */}
-      <div className="flex-1 flex flex-col items-start justify-center max-w-xl gap-6">
-        <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+      <div className="flex-1 flex flex-col items-start justify-center max-w-full sm:max-w-xl gap-4 sm:gap-6">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight">
           Are you <AuroraText className="inline-block transition-colors duration-700 ease-in-out"><WordRotator words={PLACE1_WORDS} /></AuroraText>
           <br />
           Struggling to find <AuroraText className="inline-block transition-colors duration-700 ease-in-out"><WordRotator words={PLACE2_WORDS} interval={2000} /></AuroraText>
         </h1>
-        <h2 className="text-lg md:text-2xl font-medium text-gray-700 dark:text-gray-200 relative">
-          <span className="absolute -left-6 top-1/2 transform -translate-y-1/2 w-1 h-8 bg-gradient-to-b from-[#9146FF] to-purple-600 rounded-full"></span>
+        <h2 className="text-base sm:text-lg md:text-2xl font-medium text-gray-700 dark:text-gray-200 relative">
+          <span className="absolute -left-4 sm:-left-6 top-1/2 transform -translate-y-1/2 w-1 h-6 sm:h-8 bg-gradient-to-b from-[#9146FF] to-purple-600 rounded-full"></span>
           Get your brand identity in seconds using{" "}
-          <AuroraText className="inline-block font-extrabold text-2xl md:text-3xl transition-colors duration-700 ease-in-out">Circle</AuroraText> in seconds
+          <AuroraText className="inline-block font-extrabold text-lg sm:text-2xl md:text-3xl transition-colors duration-700 ease-in-out">Circle</AuroraText> in seconds
         </h2>
       </div>
       
       {/* Right: Marquee */}
-      <div className="flex-1 flex items-center justify-center relative">
+      <div className="flex-1 flex items-center justify-center relative min-w-0 w-full max-w-full">
         <Marquee3D />
         <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-background"></div>
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background"></div>
