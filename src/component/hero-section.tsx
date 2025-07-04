@@ -46,7 +46,7 @@ export function HeroSection() {
       <style dangerouslySetInnerHTML={{ __html: wordAnimationStyle }} />
       <section className="w-full flex flex-col md:flex-row items-center justify-between min-h-[70vh] py-8 sm:py-12 md:py-24 px-2 sm:px-4 md:px-16 gap-6 sm:gap-8 bg-transparent !bg-transparent">
       {/* Left: Text */}
-      <div className="flex-1 flex flex-col items-start justify-center max-w-full sm:max-w-xl gap-4 sm:gap-6">
+      <div className="flex-1 flex flex-col items-start justify-center max-w-full sm:max-w-xl gap-4 sm:gap-6 pl-2 sm:pl-4 md:pl-0">
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight">
           Are you <AuroraText className="inline-block transition-colors duration-700 ease-in-out"><WordRotator words={PLACE1_WORDS} /></AuroraText>
           <br />
