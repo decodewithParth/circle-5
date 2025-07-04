@@ -18,6 +18,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { FooterSection } from "@/component/footer-section";
 import Link from "next/link";
+import { CardDemo } from "@/component/aceternity/cards";
 
 export default function AboutPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -404,71 +405,38 @@ export default function AboutPage() {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-                {/* Founder */}
-                <div className="group relative">
-                  <div className="bg-gradient-to-br from-white to-gray-50 dark:from-neutral-900 dark:to-neutral-800 rounded-3xl p-8 shadow-xl border border-gray-200 dark:border-neutral-700 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="text-center">
-                      <div className="relative mb-8">
-                        <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-[#9146FF] to-purple-600 p-1 shadow-lg">
-                          <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 overflow-hidden">
-                            <Image
-                              src="/Parth Profile Picture.jpg"
-                              alt="Parth Chauhan"
-                              width={160}
-                              height={160}
-                              className="w-full h-full rounded-full object-cover"
-                            />
-                          </div>
-                        </div>
-                        <div className="absolute -top-2 -right-2 bg-[#9146FF] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
-                          Founder
-                        </div>
-                      </div>
-                      <h3 className="text-3xl font-bold mb-3 text-black dark:text-white">Parth Chauhan</h3>
-                      <p className="text-[#9146FF] font-semibold mb-6 text-lg">Founder & CEO</p>
-                      <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-lg">
-                        Visionary leader with a passion for connecting people and creating meaningful partnerships. 
-                        Parth brings strategic thinking and deep industry knowledge to drive Circle's mission forward.
-                      </p>
-                      <div className="mt-6 flex justify-center gap-4">
-                        <div className="w-2 h-2 rounded-full bg-[#9146FF]"></div>
-                        <div className="w-2 h-2 rounded-full bg-purple-600"></div>
-                        <div className="w-2 h-2 rounded-full bg-[#9146FF]"></div>
+                {/* Founder Card */}
+                <div className="flex justify-center">
+                  <div className="relative max-w-xs w-full h-80 rounded-2xl shadow-2xl overflow-hidden border border-[#9146FF]/30 p-3 bg-white dark:bg-neutral-900">
+                    <div className="relative w-full h-full rounded-xl overflow-hidden">
+                      <Image
+                        src="/Parth Profile Picture.jpg"
+                        alt="Parth Chauhan"
+                        layout="fill"
+                        objectFit="cover"
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                      <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent px-6 py-5 flex flex-col items-start">
+                        <h3 className="text-xl font-extrabold text-white mb-1 drop-shadow">Parth Chauhan</h3>
+                        <span className="text-[#9146FF] bg-white/80 px-3 py-1 rounded-full text-xs font-bold shadow">Founder & CEO</span>
                       </div>
                     </div>
                   </div>
                 </div>
-
-                {/* Co-founder */}
-                <div className="group relative">
-                  <div className="bg-gradient-to-br from-white to-gray-50 dark:from-neutral-900 dark:to-neutral-800 rounded-3xl p-8 shadow-xl border border-gray-200 dark:border-neutral-700 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="text-center">
-                      <div className="relative mb-8">
-                        <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-[#9146FF] to-purple-600 p-1 shadow-lg">
-                          <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 overflow-hidden">
-                            <Image
-                              src="/Jay Profile Picture.jpg"
-                              alt="Jay Bhatt"
-                              width={160}
-                              height={160}
-                              className="w-full h-full rounded-full object-cover"
-                            />
-                          </div>
-                        </div>
-                        <div className="absolute -top-2 -right-2 bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
-                          Co-founder
-                        </div>
-                      </div>
-                      <h3 className="text-3xl font-bold mb-3 text-black dark:text-white">Jay Bhatt</h3>
-                      <p className="text-[#9146FF] font-semibold mb-6 text-lg">Co-founder & COO</p>
-                      <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-lg">
-                        Operations leader driving the platform's strategic growth and business development. 
-                        Jay combines operational excellence with strategic vision to scale Circle's impact.
-                      </p>
-                      <div className="mt-6 flex justify-center gap-4">
-                        <div className="w-2 h-2 rounded-full bg-purple-600"></div>
-                        <div className="w-2 h-2 rounded-full bg-[#9146FF]"></div>
-                        <div className="w-2 h-2 rounded-full bg-purple-600"></div>
+                {/* Co-founder Card */}
+                <div className="flex justify-center">
+                  <div className="relative max-w-xs w-full h-80 rounded-2xl shadow-2xl overflow-hidden border border-purple-600/30 p-3 bg-white dark:bg-neutral-900">
+                    <div className="relative w-full h-full rounded-xl overflow-hidden">
+                      <Image
+                        src="/Jay Profile Picture.jpg"
+                        alt="Jay Bhatt"
+                        layout="fill"
+                        objectFit="cover"
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                      <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent px-6 py-5 flex flex-col items-start">
+                        <h3 className="text-xl font-extrabold text-white mb-1 drop-shadow">Jay Bhatt</h3>
+                        <span className="text-purple-600 bg-white/80 px-3 py-1 rounded-full text-xs font-bold shadow">Co-founder & COO</span>
                       </div>
                     </div>
                   </div>
