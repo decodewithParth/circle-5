@@ -37,25 +37,25 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <div id="features" className="features-section-wrapper w-full flex flex-col justify-center items-center py-12 relative overflow-hidden bg-gray-100 backdrop-blur-md">
+    <div id="features" className="features-section-wrapper w-full flex flex-col justify-center items-center py-8 sm:py-12 md:py-16 px-2 sm:px-4 md:px-0 relative overflow-hidden bg-gray-100 backdrop-blur-md">
       {/* Top gradient for smooth merging */}
       <div className="pointer-events-none absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-white/80 to-transparent z-10" />
-      <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-center mb-10 z-20">
+      <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-center mb-6 sm:mb-10 z-20">
         Features
       </h2>
       {/* <RetroGrid className="z-0" /> */}
-      <section className="flex flex-row items-center justify-center gap-8 w-full z-20">
+      <section className="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-8 w-full z-20">
         {features.map((feature, idx) => (
           <div
             key={idx}
-            className="flex flex-col items-center justify-center w-64"
+            className="flex flex-col items-center justify-center w-full sm:w-64 max-w-xs"
           >
             {/* icon removed */}
             <EvervaultCard
               text={feature.heading}
               className={`mb-2 bg-gradient-to-br ${feature.color}`}
             />
-            <div className="text-center text-gray-700 dark:text-gray-200 mt-2 text-base font-medium">
+            <div className="text-center text-gray-700 dark:text-gray-200 mt-2 text-sm sm:text-base font-medium break-normal">
               <TextAnimate
                 variants={{
                   hidden: { opacity: 0, y: 30, scale: 0.5 },
