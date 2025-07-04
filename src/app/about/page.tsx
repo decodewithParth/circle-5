@@ -13,9 +13,11 @@ import {
 import { ShimmerButton } from "@/component/magicui/shimmer-button";
 import { EvervaultCard } from "@/component/aceternity/evervault-card-1";
 import { EvervaultCard as EvervaultCardSimple } from "@/component/aceternity/evervault-card";
+import { Timeline } from "@/component/aceternity/timeline";
 import { useState } from "react";
 import Image from "next/image";
 import { FooterSection } from "@/component/footer-section";
+import Link from "next/link";
 
 export default function AboutPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,6 +26,167 @@ export default function AboutPage() {
     { name: "Home", link: "/" },
     { name: "About Us", link: "/about" },
     { name: "Contact Us", link: "/contact" },
+  ];
+
+  const timelineData = [
+    {
+      title: "12 Sep 2024",
+      content: (
+        <div className="space-y-4">
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <strong className="text-[#9146FF] font-bold">Parth Chauhan</strong> joined <strong className="text-[#9146FF] font-bold">Digital Devas</strong> as Co-founder, 
+            taking on multiple roles and responsibilities to drive the agency's growth and success.
+          </p>
+          <div className="bg-gradient-to-r from-[#9146FF]/10 to-purple-600/10 p-4 rounded-lg border border-[#9146FF]/20">
+            <p className="text-sm text-[#9146FF] font-medium">
+              💡 Key Insight: Parth's diverse expertise and leadership would become the foundation for building meaningful brand-creator partnerships
+            </p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "27 Feb 2025",
+      content: (
+        <div className="space-y-6">
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            Down the line of 6 months, we worked with many companies under NDA (Non-Disclosure Agreement) and gave them new identities. 
+            While tracking their progress, we identified some critical issues that were affecting the brand-creator ecosystem.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <EvervaultCardSimple
+              text="01"
+              className="h-32"
+              showIcon={false}
+            >
+              <h4 className="text-lg font-bold text-[#9146FF]">Connectivity of Creators</h4>
+            </EvervaultCardSimple>
+            
+            <EvervaultCardSimple
+              text="02"
+              className="h-32"
+              showIcon={false}
+            >
+              <h4 className="text-lg font-bold text-[#9146FF]">Transparency of Process</h4>
+            </EvervaultCardSimple>
+            
+            <EvervaultCardSimple
+              text="03"
+              className="h-32"
+              showIcon={false}
+            >
+              <h4 className="text-lg font-bold text-[#9146FF]">Management of Relations</h4>
+            </EvervaultCardSimple>
+          </div>
+          
+          <div className="bg-gradient-to-r from-[#9146FF]/20 to-purple-600/20 p-6 rounded-lg border border-[#9146FF]/30">
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              After discussing these problems with brands and creators, we realized we had identified a significant opportunity 
+              to revolutionize the creator economy.
+            </p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "15 Mar 2025",
+      content: (
+        <div className="space-y-6">
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            During this timeline, we focused on <strong className="text-[#9146FF] font-bold">ideation</strong>, 
+            <strong className="text-[#9146FF] font-bold"> planning</strong>, and started building our team to bring 
+            the Circle vision to life.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <EvervaultCardSimple
+              text="💡"
+              className="h-32"
+              showIcon={true}
+            >
+              <h4 className="text-lg font-bold text-[#9146FF]">Ideation</h4>
+            </EvervaultCardSimple>
+            
+            <EvervaultCardSimple
+              text="📋"
+              className="h-32"
+              showIcon={true}
+            >
+              <h4 className="text-lg font-bold text-purple-600">Planning</h4>
+            </EvervaultCardSimple>
+            
+            <EvervaultCardSimple
+              text="👥"
+              className="h-32"
+              showIcon={true}
+            >
+              <h4 className="text-lg font-bold text-[#9146FF]">Team Building</h4>
+            </EvervaultCardSimple>
+          </div>
+
+          <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
+            <li><strong>Ideation:</strong> Brainstorming and conceptualizing the perfect platform to solve the identified challenges</li>
+            <li><strong>Planning:</strong> Strategic planning, roadmap development, and defining the core features and vision</li>
+            <li><strong>Team Building:</strong> Assembling the right team with diverse skills to execute the Circle vision</li>
+          </ul>
+          
+          <div className="bg-gradient-to-r from-[#9146FF]/20 to-purple-600/20 p-6 rounded-lg border border-[#9146FF]/30">
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              This phase was crucial in laying the foundation for what would become a revolutionary platform 
+              in the creator economy.
+            </p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Current",
+      content: (
+        <div className="space-y-6">
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            We are working on every single line of code to satisfy your needs, leveraging cutting-edge <strong className="text-[#9146FF] font-bold">AI technology</strong>.<br />
+            The platform will be shared with you soon!
+          </p>
+          <div className="flex justify-center">
+            <Link href="/#waitlist" passHref legacyBehavior>
+              <a>
+                <ShimmerButton className="px-8 py-3 text-lg rounded-full">
+                  Join the Waitlist
+                </ShimmerButton>
+              </a>
+            </Link>
+          </div>
+          <div className="bg-gradient-to-r from-[#9146FF]/20 to-purple-600/20 p-6 rounded-lg border border-[#9146FF]/30">
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              Your feedback and interest will help us shape the future of Circle. Stay tuned for updates!
+            </p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Launch",
+      content: (
+        <div className="relative flex flex-col items-center justify-center py-12 px-4 md:px-16">
+          <div className="absolute inset-0 bg-gradient-to-br from-[#9146FF]/30 via-purple-400/10 to-blue-400/10 rounded-3xl blur-2xl opacity-60 pointer-events-none" />
+          <div className="relative z-10 flex flex-col items-center text-center space-y-6 max-w-2xl mx-auto">
+            <div className="flex items-center justify-center mb-4">
+              <span className="text-6xl md:text-7xl lg:text-8xl animate-bounce">🚀</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-[#9146FF] drop-shadow-lg mb-2">Launch</h2>
+            <p className="text-xl md:text-2xl font-semibold text-gray-800 dark:text-white mb-4">
+              Waiting to handover this amazing product
+            </p>
+            <div
+              className="mt-2 text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#9146FF] via-purple-500 to-blue-400 drop-shadow-lg animate-pulse select-none"
+            >
+              ✨ Coming Soon ✨
+            </div>
+          </div>
+        </div>
+      ),
+    },
   ];
 
   return (
@@ -118,7 +281,8 @@ export default function AboutPage() {
             </div>
           </section>
 
-          {/* Story Section */}
+          {/* Story Section - Commented out original story section */}
+          {/* 
           <section className="py-24 px-4 bg-gradient-to-b from-white to-gray-50 dark:from-black dark:to-neutral-950">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-20">
@@ -135,7 +299,6 @@ export default function AboutPage() {
               </div>
               
               <div className="max-w-5xl mx-auto">
-                {/* Main Story */}
                 <div className="bg-gradient-to-br from-white via-purple-50/30 to-blue-50/20 dark:from-neutral-900 dark:via-purple-950/20 dark:to-blue-950/10 rounded-3xl p-10 md:p-16 shadow-xl border border-[#9146FF]/30 backdrop-blur-sm mb-12 relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-[#9146FF]/10 via-transparent to-purple-600/5 opacity-60"></div>
                   <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-[#9146FF]/20 to-transparent rounded-full blur-3xl"></div>
@@ -159,7 +322,6 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                {/* Challenges Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
                   <EvervaultCard
                     text="01"
@@ -178,7 +340,6 @@ export default function AboutPage() {
                   />
                 </div>
 
-                {/* Solution */}
                 <div className="text-center mb-8">
                   <h3 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-4">
                     The Ultimate Solution
@@ -202,6 +363,27 @@ export default function AboutPage() {
                   </EvervaultCardSimple>
                 </div>
               </div>
+            </div>
+          </section>
+          */}
+
+          {/* Timeline Story Section */}
+          <section className="py-24 px-4 bg-gradient-to-b from-white to-gray-50 dark:from-black dark:to-neutral-950">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-20">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#9146FF]/10 border border-[#9146FF]/20 text-[#9146FF] text-sm font-medium mb-6">
+                  <span className="w-2 h-2 rounded-full bg-[#9146FF]"></span>
+                  Our Journey
+                </div>
+                <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
+                  How Circle Began
+                </h2>
+                <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-medium">
+                  A timeline of our story from challenges to solution
+                </p>
+              </div>
+              
+              <Timeline data={timelineData.slice().reverse()} />
             </div>
           </section>
 
