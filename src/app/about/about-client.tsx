@@ -11,14 +11,12 @@ import {
   NavbarLogo,
 } from "@/component/aceternity/resizable-navbar";
 import { ShimmerButton } from "@/component/magicui/shimmer-button";
-import { EvervaultCard } from "@/component/aceternity/evervault-card-1";
 import { EvervaultCard as EvervaultCardSimple } from "@/component/aceternity/evervault-card";
 import { Timeline } from "@/component/aceternity/timeline";
 import { useState } from "react";
 import Image from "next/image";
 import { FooterSection } from "@/component/footer-section";
 import Link from "next/link";
-import { CardDemo } from "@/component/aceternity/cards";
 
 export default function AboutPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

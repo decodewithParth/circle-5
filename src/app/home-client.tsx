@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
-import { EvervaultCard } from "../component/aceternity/evervault-card";
-import { EvervaultCard as EvervaultCard1 } from "../component/aceternity/evervault-card-1";
+// import Image from "next/image";
+// import { EvervaultCard } from "../component/aceternity/evervault-card";
+// import { EvervaultCard as EvervaultCard1 } from "../component/aceternity/evervault-card-1";
 import {
   Navbar,
   NavBody,
@@ -15,8 +15,8 @@ import {
   MobileNavToggle
 } from "../component/aceternity/resizable-navbar";
 import { ShimmerButton } from "../component/magicui/shimmer-button";
-import { motion } from "framer-motion";
-import { GoCopilot } from "react-icons/go";
+// import { motion } from "framer-motion";
+// import { GoCopilot } from "react-icons/go";
 import { HeroSection } from "../component/hero-section";
 import { FeaturesSection } from "../component/features-section";
 import { ForCreatorsSection } from "../component/for-creators-section";
