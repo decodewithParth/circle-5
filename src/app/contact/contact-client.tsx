@@ -91,7 +91,7 @@ export default function ContactPage() {
               {/* Subtitle */}
               <h2 className="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-200 max-w-3xl leading-relaxed">
                 Ready to revolutionize your brand-creator partnerships? 
-                <span className="text-[#9146FF] font-semibold"> Let's connect</span> and build something amazing together.
+                <span className="text-[#9146FF] font-semibold"> Let&apos;s connect</span> and build something amazing together.
               </h2>
             </div>
           </section>
@@ -104,7 +104,7 @@ export default function ContactPage() {
                   Get in Touch
                 </h2>
                 <p className="text-xl text-gray-600 dark:text-gray-300">
-                  We'd love to hear from you
+                  We&apos;d love to hear from you
                 </p>
               </div>
               

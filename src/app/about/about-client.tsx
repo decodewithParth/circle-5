@@ -32,13 +32,13 @@ export default function AboutPage() {
       title: "12 Sep 2024",
       content: (
         <div className="space-y-4">
-          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-            <strong className="text-[#9146FF] font-bold">Parth Chauhan</strong> joined <strong className="text-[#9146FF] font-bold">Digital Devas</strong> as Co-founder, 
-            taking on multiple roles and responsibilities to drive the agency's growth and success.
-          </p>
+                      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              <strong className="text-[#9146FF] font-bold">Parth Chauhan</strong> joined <strong className="text-[#9146FF] font-bold">Digital Devas</strong> as Co-founder, 
+              taking on multiple roles and responsibilities to drive the agency&apos;s growth and success.
+            </p>
           <div className="bg-gradient-to-r from-[#9146FF]/10 to-purple-600/10 p-4 rounded-lg border border-[#9146FF]/20">
             <p className="text-sm text-[#9146FF] font-medium">
-              💡 Key Insight: Parth's diverse expertise and leadership would become the foundation for building meaningful brand-creator partnerships
+              💡 Key Insight: Parth&apos;s diverse expertise and leadership would become the foundation for building meaningful brand-creator partnerships
             </p>
           </div>
         </div>
