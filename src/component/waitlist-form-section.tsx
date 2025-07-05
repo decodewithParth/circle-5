@@ -83,7 +83,7 @@ export default function WaitlistFormSection() {
             This Is Your Invite to
             <br className="md:hidden" />
             <span className="px-2 py-1 rounded bg-[#9146FF] text-white whitespace-nowrap md:ml-2 md:inline mt-2 md:mt-0">
-              Join Inner Circle
+              Join Hey Circle
             </span>
           </h2>
           <p className="text-base md:text-xl text-gray-300 mb-4">
@@ -148,7 +148,7 @@ export default function WaitlistFormSection() {
                   className="accent-purple-600 w-4 h-4"
                 />
                 <label htmlFor="whatsapp" className="text-base">
-                  Want to join the early beta access circle whatsapp community
+                  Want to join the early beta access Hey Circle whatsapp community
                 </label>
               </div>
               {error && <div className="text-red-500 text-sm">{error}</div>}

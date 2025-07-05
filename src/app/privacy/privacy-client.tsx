@@ -103,10 +103,10 @@ export default function PrivacyPolicyPage() {
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Introduction</h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    At Circle ("we," "our," or "us"), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform that connects brands and creators.
+                    At Hey Circle ("we," "our," or "us"), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform that connects brands and creators.
                   </p>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    By using Circle, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies and practices, please do not use our platform.
+                    By using Hey Circle, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies and practices, please do not use our platform.
                   </p>
                 </div>
 

@@ -97,7 +97,7 @@ export default function AboutPage() {
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             During this timeline, we focused on <strong className="text-[#9146FF] font-bold">ideation</strong>, 
             <strong className="text-[#9146FF] font-bold"> planning</strong>, and started building our team to bring 
-            the Circle vision to life.
+            the Hey Circle vision to life.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -129,7 +129,7 @@ export default function AboutPage() {
           <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
             <li><strong>Ideation:</strong> Brainstorming and conceptualizing the perfect platform to solve the identified challenges</li>
             <li><strong>Planning:</strong> Strategic planning, roadmap development, and defining the core features and vision</li>
-            <li><strong>Team Building:</strong> Assembling the right team with diverse skills to execute the Circle vision</li>
+            <li><strong>Team Building:</strong> Assembling the right team with diverse skills to execute the Hey Circle vision</li>
           </ul>
           
           <div className="bg-gradient-to-r from-[#9146FF]/20 to-purple-600/20 p-6 rounded-lg border border-[#9146FF]/30">
@@ -158,7 +158,7 @@ export default function AboutPage() {
           </div>
           <div className="bg-gradient-to-r from-[#9146FF]/20 to-purple-600/20 p-6 rounded-lg border border-[#9146FF]/30">
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              Your feedback and interest will help us shape the future of Circle. Stay tuned for updates!
+              Your feedback and interest will help us shape the future of Hey Circle. Stay tuned for updates!
             </p>
           </div>
         </div>
@@ -242,7 +242,7 @@ export default function AboutPage() {
               {/* Main Title */}
               <div className="space-y-4">
                 <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                  About <span className="text-[#9146FF]">Circle</span>
+                  About <span className="text-[#9146FF]">Hey Circle</span>
                 </h1>
                 <div className="w-24 h-1 bg-gradient-to-r from-[#9146FF] to-purple-600 mx-auto rounded-full"></div>
               </div>
@@ -304,7 +304,7 @@ export default function AboutPage() {
                       <span className="w-2 h-2 rounded-full bg-[#9146FF] animate-pulse"></span>
                     </div>
                     <p className="text-xl md:text-2xl leading-relaxed text-gray-800 dark:text-gray-200 max-w-4xl mx-auto font-medium">
-                      The idea for Circle was born while we were running our marketing agency, 
+                      The idea for Hey Circle was born while we were running our marketing agency, 
                       <strong className="text-[#9146FF] font-bold"> Digital Devas</strong>. During our work with brands and creators, 
                       we consistently faced two major challenges that inspired our mission.
                     </p>
@@ -320,7 +320,7 @@ export default function AboutPage() {
                   <EvervaultCard
                     text="01"
                     title="Genuine Connections"
-                    description="Finding authentic partnerships between brands and creators that go beyond superficial collaborations and create lasting value for both parties. We discovered that most platforms focus on quantity over quality, leading to partnerships that don't deliver real results. Circle was built to prioritize meaningful connections that drive mutual growth and success."
+                    description="Finding authentic partnerships between brands and creators that go beyond superficial collaborations and create lasting value for both parties. We discovered that most platforms focus on quantity over quality, leading to partnerships that don't deliver real results. Hey Circle was built to prioritize meaningful connections that drive mutual growth and success."
                     size="md"
                     className="mx-auto"
                   />
@@ -328,7 +328,7 @@ export default function AboutPage() {
                   <EvervaultCard
                     text="02"
                     title="Transparency"
-                    description="Ensuring clear communication, honest collaboration, and complete transparency in all aspects of brand-creator partnerships. The lack of transparency in the creator economy was a major pain point we identified. Circle provides complete visibility into partnership metrics, communication channels, and performance tracking to build trust between all parties involved."
+                    description="Ensuring clear communication, honest collaboration, and complete transparency in all aspects of brand-creator partnerships. The lack of transparency in the creator economy was a major pain point we identified. Hey Circle provides complete visibility into partnership metrics, communication channels, and performance tracking to build trust between all parties involved."
                     size="md"
                     className="mx-auto"
                   />
@@ -346,12 +346,12 @@ export default function AboutPage() {
                     showIcon={false}
                   >
                     <h3 className="text-2xl md:text-3xl font-bold mb-4 text-black dark:text-white">
-                      Circle
+                      Hey Circle
                     </h3>
                     <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                       These challenges inspired us to create a platform that would revolutionize 
                       how brands and creators connect, collaborate, and grow together. 
-                      <strong className="text-[#9146FF] font-semibold">Circle</strong> was born from the belief that 
+                      <strong className="text-[#9146FF] font-semibold">Hey Circle</strong> was born from the belief that 
                       authentic partnerships drive the best results.
                     </p>
                   </EvervaultCardSimple>
@@ -370,7 +370,7 @@ export default function AboutPage() {
                   Our Journey
                 </div>
                 <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
-                  How Circle Began
+                  How Hey Circle Began
                 </h2>
                 <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-medium">
                   A timeline of our story from challenges to solution
@@ -393,7 +393,7 @@ export default function AboutPage() {
                   Meet Our Founders
                 </h2>
                 <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-medium">
-                  The visionaries behind Circle
+                  The visionaries behind Hey Circle
                 </p>
               </div>
               

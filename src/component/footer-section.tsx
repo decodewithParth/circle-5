@@ -74,7 +74,7 @@ export const FooterSection = () => {
               className="mb-6"
             >
               <h3 className="text-2xl font-bold mb-4">
-                Circle
+                Hey Circle
                 <span className="text-[#9146FF]">.</span>
               </h3>
               <p className="text-gray-400 mb-6 max-w-md">
@@ -172,7 +172,7 @@ export const FooterSection = () => {
           className="flex flex-col md:flex-row justify-between items-center text-center md:text-left"
         >
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {currentYear} Circle. All rights reserved.
+            © {currentYear} Hey Circle. All rights reserved.
           </div>
           <div className="flex items-center text-gray-400 text-sm">
             <span>Made with</span>

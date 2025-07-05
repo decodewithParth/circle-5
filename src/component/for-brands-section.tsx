@@ -5,7 +5,7 @@ export const ForBrandsSection = () => {
   const brandCards = [
     {
       text: "01",
-      title: "Circle of Creators",
+      title: "Hey Circle of Creators",
       description: "Get access to the nano to mega creators and influencers of your category"
     },
     {

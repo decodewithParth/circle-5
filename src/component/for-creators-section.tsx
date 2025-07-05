@@ -11,7 +11,7 @@ export const ForCreatorsSection = () => {
     {
       text: "02",
       title: "Professional Opportunities",
-      description: "Explore the professional work opportunities of one of the best brands on Circle."
+      description: "Explore the professional work opportunities of one of the best brands on Hey Circle."
     },
     {
       text: "03",

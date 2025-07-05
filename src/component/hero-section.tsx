@@ -55,7 +55,7 @@ export function HeroSection() {
         <h2 className="text-base sm:text-lg md:text-2xl font-medium text-gray-700 dark:text-gray-200 relative">
           <span className="absolute -left-4 sm:-left-6 top-1/2 transform -translate-y-1/2 w-1 h-6 sm:h-8 bg-gradient-to-b from-[#9146FF] to-purple-600 rounded-full"></span>
           Get your brand identity in seconds using{" "}
-          <AuroraText className="inline-block font-extrabold text-lg sm:text-2xl md:text-3xl transition-colors duration-700 ease-in-out">Circle</AuroraText> in seconds
+          <AuroraText className="inline-block font-extrabold text-lg sm:text-2xl md:text-3xl transition-colors duration-700 ease-in-out">Hey Circle</AuroraText> in seconds
         </h2>
       </div>
       

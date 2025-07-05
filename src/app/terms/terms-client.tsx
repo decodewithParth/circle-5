@@ -103,7 +103,7 @@ export default function TermsOfServicePage() {
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Introduction</h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    Welcome to Circle. These Terms of Service ("Terms") govern your use of our mobile application that connects brands and creators. By downloading, installing, or using the Circle app, you agree to be bound by these Terms and all applicable laws and regulations.
+                    Welcome to Hey Circle. These Terms of Service ("Terms") govern your use of our mobile application that connects brands and creators. By downloading, installing, or using the Hey Circle app, you agree to be bound by these Terms and all applicable laws and regulations.
                   </p>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                     If you do not agree with any of these terms, you are prohibited from using or accessing this platform. The materials contained in this platform are protected by applicable copyright and trademark law.
@@ -114,12 +114,12 @@ export default function TermsOfServicePage() {
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Definitions</h2>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
-                    <li><strong>"App"</strong> refers to the Circle mobile application</li>
+                    <li><strong>"App"</strong> refers to the Hey Circle mobile application</li>
                     <li><strong>"User"</strong> refers to any individual or entity using our mobile application</li>
                     <li><strong>"Creator"</strong> refers to content creators, influencers, and individuals offering creative services</li>
                     <li><strong>"Brand"</strong> refers to businesses, companies, and organizations seeking creator partnerships</li>
                     <li><strong>"Content"</strong> refers to any text, images, videos, or other materials shared through the app</li>
-                    <li><strong>"Services"</strong> refers to all features and functionality provided by the Circle app</li>
+                    <li><strong>"Services"</strong> refers to all features and functionality provided by the Hey Circle app</li>
                   </ul>
                 </div>
 
@@ -200,7 +200,7 @@ export default function TermsOfServicePage() {
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
                     <li>All payments are processed through our secure payment system</li>
                     <li>Payment terms are agreed upon between brands and creators</li>
-                    <li>Circle may charge platform fees as disclosed in our fee structure</li>
+                    <li>Hey Circle may charge platform fees as disclosed in our fee structure</li>
                     <li>Refunds are subject to our refund policy and mutual agreement</li>
                     <li>Tax obligations are the responsibility of individual users</li>
                     <li>Disputes regarding payments should be resolved through our dispute resolution process</li>
@@ -216,7 +216,7 @@ export default function TermsOfServicePage() {
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
                     <li>Creators retain ownership of their original content unless otherwise agreed</li>
                     <li>Brands may license content according to agreed-upon terms</li>
-                    <li>Circle retains rights to platform content and materials</li>
+                    <li>Hey Circle retains rights to platform content and materials</li>
                     <li>Users must respect copyright and trademark laws</li>
                     <li>Unauthorized use of content is prohibited</li>
                     <li>Disputes over intellectual property should be resolved between parties</li>
@@ -239,10 +239,10 @@ export default function TermsOfServicePage() {
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
                     <li>Parties should attempt to resolve disputes amicably</li>
-                    <li>Circle may provide mediation services at our discretion</li>
+                    <li>Hey Circle may provide mediation services at our discretion</li>
                     <li>Legal disputes should be resolved through appropriate legal channels</li>
-                    <li>Circle is not responsible for resolving disputes between users</li>
-                    <li>Users agree to indemnify Circle against claims arising from their use of the platform</li>
+                    <li>Hey Circle is not responsible for resolving disputes between users</li>
+                    <li>Users agree to indemnify Hey Circle against claims arising from their use of the platform</li>
                   </ul>
                 </div>
 
@@ -250,7 +250,7 @@ export default function TermsOfServicePage() {
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Limitation of Liability</h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                    Circle's liability is limited to the extent permitted by law. We are not responsible for:
+                    Hey Circle's liability is limited to the extent permitted by law. We are not responsible for:
                   </p>
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed mb-6 space-y-2">
                     <li>Disputes between users of the platform</li>

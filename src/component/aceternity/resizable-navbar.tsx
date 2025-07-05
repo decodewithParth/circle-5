@@ -239,7 +239,7 @@ export const NavbarLogo = () => {
         height={30}
         className="rounded-lg"
       />
-      <span className="font-extrabold text-[#9146ff] dark:text-white">Circle</span>
+      <span className="font-extrabold text-[#9146ff] dark:text-white">Hey Circle</span>
     </a>
   );
 };
