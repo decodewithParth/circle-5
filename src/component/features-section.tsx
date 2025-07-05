@@ -5,7 +5,7 @@ import {
   FaComments,
   FaMoneyCheckAlt,
 } from "react-icons/fa";
-import { RetroGrid } from "./magicui/retro-grid";
+// import { RetroGrid } from "./magicui/retro-grid";
 import { TextAnimate } from "./magicui/text-animate";
 
 const features = [
