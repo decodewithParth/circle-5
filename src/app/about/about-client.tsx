@@ -421,7 +421,7 @@ export default function AboutPage() {
                   <div className="relative max-w-xs w-full h-80 rounded-2xl shadow-2xl overflow-hidden border border-purple-600/30 p-3 bg-white dark:bg-neutral-900">
                     <div className="relative w-full h-full rounded-xl overflow-hidden">
                       <Image
-                        src="/Jay Profile Picture.jpg"
+                        src="/Jay-Profile-Picture.jpg"
                         alt="Jay Bhatt"
                         layout="fill"
                         objectFit="cover"
