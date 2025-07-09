@@ -28,8 +28,14 @@ export default function WaitlistFormSection() {
   // Fetch live count on mount
   useState(() => {
     (async () => {
-      const snap = await getCountFromServer(collection(db, "waitlist"));
-      setJoinedCount(snap.data().count || 0);
+      try {
+        const snap = await getCountFromServer(collection(db, "waitlist"));
+        const actualCount = snap.data().count || 0;
+        setJoinedCount(actualCount + 999);
+      } catch (error) {
+        console.error("Error fetching waitlist count:", error);
+        setJoinedCount(999);
+      }
     })();
   });
 
@@ -58,7 +64,8 @@ export default function WaitlistFormSection() {
       toast.success("Registration successful! Welcome to the waitlist.");
       // Update live count
       const snap = await getCountFromServer(collection(db, "waitlist"));
-      setJoinedCount(snap.data().count || 0);
+      const actualCount = snap.data().count || 0;
+      setJoinedCount(actualCount + 999);
       if (formRef.current) formRef.current.reset();
       // Trigger the confetti cannon automatically
       setTimeout(() => setShowConfetti(false), 3500);
@@ -68,7 +75,12 @@ export default function WaitlistFormSection() {
         }
       }, 100); // slight delay to ensure button is mounted
     } catch (err) {
-      setError("Something went wrong. Please try again.");
+      console.error("Error submitting form:", err);
+      if ((err as any).code === 'permission-denied') {
+        setError("Firebase permissions error. Please check your configuration.");
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
     } finally {
       setLoading(false);
     }
